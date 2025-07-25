@@ -1,7 +1,8 @@
 `timescale 1ns/1ps
 `include "common_cells/registers.svh"
+`include "obi/obi_pkg.sv"
 
-module tb_user_prng_golden;
+module tb_user_prng;
 
   localparam CLK_PERIOD = 10;
   localparam int W = 16;
@@ -90,6 +91,7 @@ module tb_user_prng_golden;
     lfsr_step = {state[W-2:0], feedback};
   endfunction
 
+  logic [15:0] golden;
   // Simulation
   initial begin
     $dumpfile("tb_user_prng_golden.vcd");
@@ -109,7 +111,7 @@ module tb_user_prng_golden;
     @(posedge clk);
 
     // Initialize golden model
-    logic [W-1:0] golden = RESET_SEED;
+    golden = RESET_SEED;
 
     // Compare 10 PRNG values
     for (int i = 0; i < 10; i++) begin

@@ -4,6 +4,8 @@
 
 // Michael Rogenmoser <michaero@iis.ee.ethz.ch>
 
+`include "common_cells/cf_math_pkg.sv"
+
 package obi_pkg;
 
   /// The OBI atomics type, to be expanded.

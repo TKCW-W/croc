@@ -7,6 +7,8 @@
 
 //Gives the FF macro to have properly defined flipflops
 `include "common_cells/registers.svh"
+`include "obi/obi_pkg.sv"
+
 
 module user_prng #(
   /// The OBI configuration for all ports.
