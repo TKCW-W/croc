@@ -9,98 +9,83 @@
 `include "common_cells/registers.svh"
 `include "obi/obi_pkg.sv"
 
-
 module user_prng #(
-  /// The OBI configuration for all ports.
-  parameter obi_pkg::obi_cfg_t           ObiCfg      = obi_pkg::ObiDefaultConfig,
-  /// The request struct.
-  parameter type                         obi_req_t   = logic,
-  /// The response struct.
-  parameter type                         obi_rsp_t   = logic,
-  ///The LFSR width.
-  parameter int                          W           = 16,
-  ///The LFSR feedback polynomial mask.
-  parameter logic[W-1:0]                 TAPS        = 16'hB400,
-  ///The LFSR initial and reset seed.
-  parameter logic[W-1:0]                 RESET_SEED  = 16'hACE1
+  parameter obi_pkg::obi_cfg_t ObiCfg    = obi_pkg::ObiDefaultConfig,
+  parameter type               obi_req_t = logic,
+  parameter type               obi_rsp_t = logic,
+  parameter int                W         = 16
 ) (
-  /// Clock
-  input  logic clk_i,
-  /// Active-low reset
-  input  logic rst_ni,
-
-  /// OBI request interface
+  input  logic     clk_i,
+  input  logic     rst_ni,
   input  obi_req_t obi_req_i,
-  /// OBI response interface
   output obi_rsp_t obi_rsp_o
 );
 
   logic [W-1:0] lfsr_reg_q, lfsr_reg_d;
-  logic [W-1:0] seed_q, seed_d;
-  logic         enable_q, enable_d;
-  logic         obi_err;
-  
-  logic [1:0]   addr_idx;
-  logic feedback;
+  logic        enable, seed_valid;
 
-  assign addr_idx = obi_req_i.a.addr[3:2];
-  assign feedback = ^(lfsr_reg_q & TAPS);
+  // Control register write
+  logic write_enable;
+  logic seed_write;
+  logic ctrl_write;
 
+  assign write_enable = obi_req_i.req && obi_req_i.a.we;
+  assign seed_write = write_enable && (obi_req_i.a.addr == 32'h04);
+  assign ctrl_write = write_enable && (obi_req_i.a.addr == 32'h00);
+
+  always_comb begin
+    lfsr_reg_d = lfsr_reg_q;
+    if (seed_write)
+      lfsr_reg_d = obi_req_i.a.wdata[W-1:0];
+    else if (enable)
+      lfsr_reg_d = {lfsr_reg_q[W-2:0], ^(lfsr_reg_q & 16'hB400)};
+  end
+
+  always_ff @(posedge clk_i or negedge rst_ni) begin
+    if (!rst_ni)
+      lfsr_reg_q <= 'hACE1;
+    else
+      lfsr_reg_q <= lfsr_reg_d;
+  end
+
+  // Registers
+  logic [W-1:0] ctrl_reg;
+  always_ff @(posedge clk_i or negedge rst_ni) begin
+    if (!rst_ni)
+      ctrl_reg <= '0;
+    else if (ctrl_write)
+      ctrl_reg <= obi_req_i.a.wdata[W-1:0];
+  end
+  assign enable = ctrl_reg[0];
+
+  // OBI response
   assign obi_rsp_o.gnt = obi_req_i.req;
 
-  //Response phase 
   always_comb begin
     obi_rsp_o.rvalid = 1'b0;
     obi_rsp_o.r.rdata  = 32'h00000000;
     obi_rsp_o.r.err    = 1'b0;
+    obi_rsp_o.r.rid    = '0;
+    obi_rsp_o.r.r_optional = '0;
 
-    if (obi_req_i.req) begin
-      if (obi_req_i.a.we) begin
-        // === WRITE access ===
-        case (addr_idx)
-          2'b00: ; // enabling the LFSR(handled below)
-          2'b01: ; //setting new seed (handled below)
-          default: obi_rsp_o.r.err = 1'b1; // write to invalid address
-        endcase
-      end else begin
-        // === READ access ===
-        if (addr_idx == 2'b10) begin
+    if (!obi_req_i.a.we && obi_req_i.req) begin
+      case (obi_req_i.a.addr)
+        32'h00: begin
           obi_rsp_o.rvalid = 1'b1;
           obi_rsp_o.r.rid = obi_req_i.a.aid;
-          obi_rsp_o.r.r_optional = '0;
-          obi_rsp_o.rdata  = { {(32-W){1'b0}}, lfsr_reg_q };
-        end else begin
-          obi_rsp_o.r.err = 1'b1;  // read from invalid/unsupported register
+          obi_rsp_o.r.rdata = { {(32-W){1'b0}}, ctrl_reg };
         end
-      end
-    end
-  end
-
-  // Next-state logic
-  always_comb begin
-    lfsr_reg_d = lfsr_reg_q;
-    seed_d = seed_q;
-    enable_d   = enable_q;
-
-    if (obi_req_i.req && obi_req_i.we) begin
-      case (addr_idx)
-        2'b00: enable_d = obi_req_i.a.wdata[0];             // control
-        2'b01: begin                                       // seed
-          seed_d = obi_req_i.a.wdata[W-1:0];
-          lfsr_reg_d = obi_req_i.a.wdata[W-1:0];
+        32'h08: begin
+          obi_rsp_o.rvalid = 1'b1;
+          obi_rsp_o.r.rid = obi_req_i.a.aid;
+          obi_rsp_o.r.rdata = { {(32-W){1'b0}}, lfsr_reg_q };
         end
-        default: ; // no action for invalid address
+        default: begin
+          obi_rsp_o.rvalid = 1'b1;
+          obi_rsp_o.r.err = 1'b1;
+        end
       endcase
-    end else if (enable_q) begin
-      lfsr_reg_d = {lfsr_reg_q[W-2:0], feedback};  // shift left
     end
   end
-
-  //Sequential logic
-  `FF(enable_q, enable_d, '0, clk_i, rst_ni)
-  `FF(seed_q, seed_d, RESET_SEED, clk_i, rst_ni)
-  `FF(lfsr_reg_q, lfsr_reg_d, RESET_SEED, clk_i, rst_ni)
-
-
 
 endmodule

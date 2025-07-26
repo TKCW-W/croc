@@ -1,51 +1,30 @@
 `timescale 1ns/1ps
 `include "common_cells/registers.svh"
-`include "obi/obi_pkg.sv"
+`include "croc_pkg.sv"       
+//`include "common_cells/cf_math_pkg.sv"
 
 module tb_user_prng;
+
+  import croc_pkg::*;               
 
   localparam CLK_PERIOD = 10;
   localparam int W = 16;
   localparam logic [W-1:0] RESET_SEED = 16'hACE1;
-  localparam logic [W-1:0] TAPS       = 16'hB400;  // taps: x^16 + x^14 + x^13 + x^11 + 1
+  localparam logic [W-1:0] TAPS       = 16'hB400;
 
   // Clock and reset
   logic clk;
   logic rst_n;
 
-  // OBI subordinate request/response
-  typedef struct packed {
-    logic [31:0] addr;
-    logic        we;
-    logic [3:0]  be;
-    logic [31:0] wdata;
-    logic [4:0]  aid;  // assuming example ID width
-    logic        a_optional;
-  } a_chan_t;
-
-  typedef struct packed {
-    a_chan_t a;
-    logic    req;
-  } sbr_obi_req_t;
-
-  typedef struct packed {
-    logic [31:0] rdata;
-    logic [4:0]  rid;
-    logic        err;
-    logic        r_optional;
-  } r_chan_t;
-
-  typedef struct packed {
-    r_chan_t r;
-    logic    gnt;
-    logic    rvalid;
-  } sbr_obi_rsp_t;
-
+  // Use correct platform-defined OBI struct types
   sbr_obi_req_t obi_req_i;
   sbr_obi_rsp_t obi_rsp_o;
 
-  // Instantiate DUT
+  // Instantiate DUT with parameterized OBI types
   user_prng #(
+    .ObiCfg(SbrObiCfg),
+    .obi_req_t(sbr_obi_req_t),
+    .obi_rsp_t(sbr_obi_rsp_t),
     .W(W)
   ) dut (
     .clk_i(clk),

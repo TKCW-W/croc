@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: SHL-0.51
 
 // Michael Rogenmoser <michaero@iis.ee.ethz.ch>
-
+`timescale 1ns/1ps
 `include "common_cells/cf_math_pkg.sv"
 
 package obi_pkg;

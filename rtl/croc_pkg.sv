@@ -4,7 +4,7 @@
 //
 // Authors:
 // - Philippe Sauter <phsauter@iis.ee.ethz.ch>
-
+`timescale 1ns/1ps
 `include "register_interface/typedef.svh"
 `include "obi/typedef.svh"
 
