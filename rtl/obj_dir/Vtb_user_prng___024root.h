@@ -17,21 +17,21 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_user_prng___024root final : public Verila
     // DESIGN SPECIFIC STATE
     CData/*0:0*/ tb_user_prng__DOT__clk;
     CData/*0:0*/ tb_user_prng__DOT__rst_n;
-    CData/*0:0*/ tb_user_prng__DOT__lfsr_step__Vstatic__feedback;
-    CData/*0:0*/ tb_user_prng__DOT__dut__DOT__seed_valid;
     CData/*0:0*/ tb_user_prng__DOT__dut__DOT__write_enable;
+    CData/*0:0*/ tb_user_prng__DOT__dut__DOT__seed_write;
     CData/*0:0*/ __VstlFirstIteration;
     CData/*0:0*/ __Vtrigprevexpr___TOP__tb_user_prng__DOT__clk__0;
     CData/*0:0*/ __Vtrigprevexpr___TOP__tb_user_prng__DOT__rst_n__0;
     CData/*0:0*/ __VactContinue;
-    SData/*15:0*/ tb_user_prng__DOT__golden;
     SData/*15:0*/ tb_user_prng__DOT__dut__DOT__lfsr_reg_q;
     SData/*15:0*/ tb_user_prng__DOT__dut__DOT__lfsr_reg_d;
     SData/*15:0*/ tb_user_prng__DOT__dut__DOT__ctrl_reg;
+    IData/*31:0*/ tb_user_prng__DOT__initial_rdata;
     IData/*31:0*/ tb_user_prng__DOT__unnamedblk1__DOT__i;
+    IData/*31:0*/ tb_user_prng__DOT__unnamedblk1__DOT__unnamedblk2__DOT__rdata;
     IData/*31:0*/ __VactIterCount;
-    VlWide<3>/*73:0*/ tb_user_prng__DOT__obi_req_i;
-    QData/*38:0*/ tb_user_prng__DOT__obi_rsp_o;
+    VlWide<3>/*75:0*/ tb_user_prng__DOT__obi_req_i;
+    QData/*40:0*/ tb_user_prng__DOT__obi_rsp_o;
     VlUnpacked<CData/*0:0*/, 4> __Vm_traceActivity;
     VlDelayScheduler __VdlySched;
     VlTriggerScheduler __VtrigSched_h048fa3ad__0;

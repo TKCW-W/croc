@@ -160,16 +160,16 @@ VL_ATTR_COLD void Vtb_user_prng___024root___ctor_var_reset(Vtb_user_prng___024ro
     // Body
     vlSelf->tb_user_prng__DOT__clk = VL_RAND_RESET_I(1);
     vlSelf->tb_user_prng__DOT__rst_n = VL_RAND_RESET_I(1);
-    VL_RAND_RESET_W(74, vlSelf->tb_user_prng__DOT__obi_req_i);
-    vlSelf->tb_user_prng__DOT__obi_rsp_o = VL_RAND_RESET_Q(39);
-    vlSelf->tb_user_prng__DOT__lfsr_step__Vstatic__feedback = VL_RAND_RESET_I(1);
-    vlSelf->tb_user_prng__DOT__golden = VL_RAND_RESET_I(16);
+    VL_RAND_RESET_W(76, vlSelf->tb_user_prng__DOT__obi_req_i);
+    vlSelf->tb_user_prng__DOT__obi_rsp_o = VL_RAND_RESET_Q(41);
+    vlSelf->tb_user_prng__DOT__initial_rdata = VL_RAND_RESET_I(32);
     vlSelf->tb_user_prng__DOT__unnamedblk1__DOT__i = 0;
+    vlSelf->tb_user_prng__DOT__unnamedblk1__DOT__unnamedblk2__DOT__rdata = VL_RAND_RESET_I(32);
     vlSelf->tb_user_prng__DOT__dut__DOT__lfsr_reg_q = VL_RAND_RESET_I(16);
     vlSelf->tb_user_prng__DOT__dut__DOT__lfsr_reg_d = VL_RAND_RESET_I(16);
-    vlSelf->tb_user_prng__DOT__dut__DOT__seed_valid = VL_RAND_RESET_I(1);
-    vlSelf->tb_user_prng__DOT__dut__DOT__write_enable = VL_RAND_RESET_I(1);
     vlSelf->tb_user_prng__DOT__dut__DOT__ctrl_reg = VL_RAND_RESET_I(16);
+    vlSelf->tb_user_prng__DOT__dut__DOT__write_enable = VL_RAND_RESET_I(1);
+    vlSelf->tb_user_prng__DOT__dut__DOT__seed_write = VL_RAND_RESET_I(1);
     vlSelf->__Vtrigprevexpr___TOP__tb_user_prng__DOT__clk__0 = VL_RAND_RESET_I(1);
     vlSelf->__Vtrigprevexpr___TOP__tb_user_prng__DOT__rst_n__0 = VL_RAND_RESET_I(1);
     for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {

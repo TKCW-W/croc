@@ -29,34 +29,34 @@ void Vtb_user_prng___024root__trace_chg_0_sub_0(Vtb_user_prng___024root* vlSelf,
                      [2U]))) {
         bufp->chgBit(oldp+0,(vlSelfRef.tb_user_prng__DOT__rst_n));
         bufp->chgIData(oldp+1,(((vlSelfRef.tb_user_prng__DOT__obi_req_i[2U] 
-                                 << 0x16U) | (vlSelfRef.tb_user_prng__DOT__obi_req_i[1U] 
-                                              >> 0xaU))),32);
+                                 << 0x14U) | (vlSelfRef.tb_user_prng__DOT__obi_req_i[1U] 
+                                              >> 0xcU))),32);
         bufp->chgBit(oldp+2,((1U & (vlSelfRef.tb_user_prng__DOT__obi_req_i[1U] 
-                                    >> 9U))));
+                                    >> 0xbU))));
         bufp->chgCData(oldp+3,((0xfU & (vlSelfRef.tb_user_prng__DOT__obi_req_i[1U] 
-                                        >> 5U))),4);
+                                        >> 7U))),4);
         bufp->chgIData(oldp+4,(((vlSelfRef.tb_user_prng__DOT__obi_req_i[1U] 
-                                 << 0x1bU) | (vlSelfRef.tb_user_prng__DOT__obi_req_i[0U] 
-                                              >> 5U))),32);
-        bufp->chgCData(oldp+5,((7U & (vlSelfRef.tb_user_prng__DOT__obi_req_i[0U] 
-                                      >> 2U))),3);
+                                 << 0x19U) | (vlSelfRef.tb_user_prng__DOT__obi_req_i[0U] 
+                                              >> 7U))),32);
+        bufp->chgCData(oldp+5,((0x1fU & (vlSelfRef.tb_user_prng__DOT__obi_req_i[0U] 
+                                         >> 2U))),5);
         bufp->chgBit(oldp+6,((1U & (vlSelfRef.tb_user_prng__DOT__obi_req_i[0U] 
                                     >> 1U))));
         bufp->chgBit(oldp+7,((1U & vlSelfRef.tb_user_prng__DOT__obi_req_i[0U])));
-        bufp->chgBit(oldp+8,(vlSelfRef.tb_user_prng__DOT__lfsr_step__Vstatic__feedback));
-        bufp->chgSData(oldp+9,(vlSelfRef.tb_user_prng__DOT__golden),16);
-        bufp->chgIData(oldp+10,(vlSelfRef.tb_user_prng__DOT__unnamedblk1__DOT__i),32);
+        bufp->chgIData(oldp+8,(vlSelfRef.tb_user_prng__DOT__initial_rdata),32);
+        bufp->chgIData(oldp+9,(vlSelfRef.tb_user_prng__DOT__unnamedblk1__DOT__i),32);
+        bufp->chgIData(oldp+10,(vlSelfRef.tb_user_prng__DOT__unnamedblk1__DOT__unnamedblk2__DOT__rdata),32);
     }
     if (VL_UNLIKELY(vlSelfRef.__Vm_traceActivity[3U])) {
         bufp->chgSData(oldp+11,(vlSelfRef.tb_user_prng__DOT__dut__DOT__lfsr_reg_q),16);
-        bufp->chgBit(oldp+12,((1U & (IData)(vlSelfRef.tb_user_prng__DOT__dut__DOT__ctrl_reg))));
-        bufp->chgSData(oldp+13,(vlSelfRef.tb_user_prng__DOT__dut__DOT__ctrl_reg),16);
+        bufp->chgSData(oldp+12,(vlSelfRef.tb_user_prng__DOT__dut__DOT__ctrl_reg),16);
+        bufp->chgBit(oldp+13,((1U & (IData)(vlSelfRef.tb_user_prng__DOT__dut__DOT__ctrl_reg))));
     }
     bufp->chgBit(oldp+14,(vlSelfRef.tb_user_prng__DOT__clk));
     bufp->chgIData(oldp+15,((IData)((vlSelfRef.tb_user_prng__DOT__obi_rsp_o 
-                                     >> 7U))),32);
-    bufp->chgCData(oldp+16,((7U & (IData)((vlSelfRef.tb_user_prng__DOT__obi_rsp_o 
-                                           >> 4U)))),3);
+                                     >> 9U))),32);
+    bufp->chgCData(oldp+16,((0x1fU & (IData)((vlSelfRef.tb_user_prng__DOT__obi_rsp_o 
+                                              >> 4U)))),5);
     bufp->chgBit(oldp+17,((1U & (IData)((vlSelfRef.tb_user_prng__DOT__obi_rsp_o 
                                          >> 3U)))));
     bufp->chgBit(oldp+18,((1U & (IData)((vlSelfRef.tb_user_prng__DOT__obi_rsp_o 
@@ -66,16 +66,12 @@ void Vtb_user_prng___024root__trace_chg_0_sub_0(Vtb_user_prng___024root* vlSelf,
     bufp->chgBit(oldp+20,((1U & (IData)(vlSelfRef.tb_user_prng__DOT__obi_rsp_o))));
     bufp->chgSData(oldp+21,(vlSelfRef.tb_user_prng__DOT__dut__DOT__lfsr_reg_d),16);
     bufp->chgBit(oldp+22,(vlSelfRef.tb_user_prng__DOT__dut__DOT__write_enable));
-    bufp->chgBit(oldp+23,(((IData)(vlSelfRef.tb_user_prng__DOT__dut__DOT__write_enable) 
-                           & (4U == ((vlSelfRef.tb_user_prng__DOT__obi_req_i[2U] 
-                                      << 0x16U) | (
-                                                   vlSelfRef.tb_user_prng__DOT__obi_req_i[1U] 
-                                                   >> 0xaU))))));
+    bufp->chgBit(oldp+23,(vlSelfRef.tb_user_prng__DOT__dut__DOT__seed_write));
     bufp->chgBit(oldp+24,(((IData)(vlSelfRef.tb_user_prng__DOT__dut__DOT__write_enable) 
                            & (0U == ((vlSelfRef.tb_user_prng__DOT__obi_req_i[2U] 
-                                      << 0x16U) | (
+                                      << 0x14U) | (
                                                    vlSelfRef.tb_user_prng__DOT__obi_req_i[1U] 
-                                                   >> 0xaU))))));
+                                                   >> 0xcU))))));
 }
 
 void Vtb_user_prng___024root__trace_cleanup(void* voidSelf, VerilatedVcd* /*unused*/) {

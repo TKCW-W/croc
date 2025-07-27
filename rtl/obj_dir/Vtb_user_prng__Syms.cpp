@@ -43,14 +43,11 @@ Vtb_user_prng__Syms::Vtb_user_prng__Syms(VerilatedContext* contextp, const char*
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(66);
+        Verilated::stackCheck(70);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-9);
     _vm_contextp__->timeprecision(-12);
     // Setup each module's pointers to their submodules
     // Setup each module's pointer back to symbol table (for public functions)
     TOP.__Vconfigure(true);
-    // Setup scopes
-    __Vscope_tb_user_prng.configure(this, name(), "tb_user_prng", "tb_user_prng", "<null>", -9, VerilatedScope::SCOPE_OTHER);
-    __Vscope_tb_user_prng__unnamedblk1.configure(this, name(), "tb_user_prng.unnamedblk1", "unnamedblk1", "<null>", -9, VerilatedScope::SCOPE_OTHER);
 }

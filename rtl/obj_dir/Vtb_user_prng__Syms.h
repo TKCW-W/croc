@@ -33,10 +33,6 @@ class alignas(VL_CACHE_LINE_BYTES)Vtb_user_prng__Syms final : public VerilatedSy
     // MODULE INSTANCE STATE
     Vtb_user_prng___024root        TOP;
 
-    // SCOPE NAMES
-    VerilatedScope __Vscope_tb_user_prng;
-    VerilatedScope __Vscope_tb_user_prng__unnamedblk1;
-
     // CONSTRUCTORS
     Vtb_user_prng__Syms(VerilatedContext* contextp, const char* namep, Vtb_user_prng* modelp);
     ~Vtb_user_prng__Syms();
