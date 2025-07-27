@@ -7,7 +7,7 @@
 
 //Gives the FF macro to have properly defined flipflops
 `include "common_cells/registers.svh"
-`include "obi/obi_pkg.sv"
+//`include "obi/obi_pkg.sv"
 
 
 module user_prng #(
@@ -68,7 +68,7 @@ module user_prng #(
           obi_rsp_o.rvalid = 1'b1;
           obi_rsp_o.r.rid = obi_req_i.a.aid;
           obi_rsp_o.r.r_optional = '0;
-          obi_rsp_o.rdata  = { {(32-W){1'b0}}, lfsr_reg_q };
+          obi_rsp_o.r.rdata  = { {(32-W){1'b0}}, lfsr_reg_q };
         end else begin
           obi_rsp_o.r.err = 1'b1;  // read from invalid/unsupported register
         end
@@ -82,7 +82,7 @@ module user_prng #(
     seed_d = seed_q;
     enable_d   = enable_q;
 
-    if (obi_req_i.req && obi_req_i.we) begin
+    if (obi_req_i.req && obi_req_i.a.we) begin
       case (addr_idx)
         2'b00: enable_d = obi_req_i.a.wdata[0];             // control
         2'b01: begin                                       // seed
