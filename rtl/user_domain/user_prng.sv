@@ -2,8 +2,8 @@
 //Goal is to implement a seed-configurable LFSR with 16 bits
 //TODO1: implement a basic 16 bit LFSR with enable bit                                                  √
 //TODO2: configurable seed                                                                              √
-//TODO3: modify user_pkg.sv to update address map and address range, addr_decode and demux ...
-//TODO4: update bender.yml to include new files
+//TODO3: modify user_pkg.sv to update address map and address range, addr_decode and demux ...          √
+//TODO4: update bender.yml to include new files                                                         √
 
 //Gives the FF macro to have properly defined flipflops
 `include "common_cells/registers.svh"

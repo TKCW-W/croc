@@ -26,7 +26,7 @@ package user_pkg;
   localparam bit [31:0] UserRomAddrOffset   = croc_pkg::UserBaseAddr; // 32'h2000_0000;
   localparam bit [31:0] UserRomAddrRange    = 32'h0000_1000;          // every subordinate has at least 4KB
 
-  localparam bit [31:0] UserLfsrAddrOffset   = UserRomAddrOffset + UserRomAddrRange; // 32'h2000_1000;
+  localparam bit [31:0] UserLfsrAddrOffset   = 32'h2000_1000; // 32'h2000_1000;
   localparam bit [31:0] UserLfsrAddrRange    = 32'h0000_1000;
 
   localparam int unsigned NumDemuxSbrRules  = NumUserDomainSubordinates; // number of address rules in the decoder
@@ -43,7 +43,7 @@ package user_pkg;
   // Address rules given to address decoder
   localparam croc_pkg::addr_map_rule_t [NumDemuxSbrRules-1:0] user_addr_map = '{                          // 0: OBI Error (default)
     '{ idx: UserRom,       start_addr: UserRomAddrOffset,       end_addr: UserRomAddrOffset  + UserRomAddrRange  }, // 1: ROM
-    '{ idx: UserLfsr,      start_addr: UserLfsrAddrOffset,      end_addr: UserLfsrAddrOffset + UserLfsrAddrRange }  // 2: NeoPixel
+    '{ idx: UserLfsr,      start_addr: UserLfsrAddrOffset,      end_addr: UserLfsrAddrOffset + UserLfsrAddrRange }  // 2: LFSR
   };
 
 endpackage

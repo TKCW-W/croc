@@ -48,8 +48,8 @@ clean-deps:
 ############
 # Software #
 ############
-##SW_HEX := sw/bin/helloworld.hex
-SW_HEX := sw/bin/test_lfsr.hex
+SW_HEX := sw/bin/helloworld.hex
+##SW_HEX := sw/bin/test_lfsr.hex
 
 $(SW_HEX): sw/*.c sw/*.h sw/*.S sw/*.ld
 	$(MAKE) -C sw/ compile

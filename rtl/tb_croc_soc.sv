@@ -438,6 +438,7 @@ module tb_croc_soc #(
     /////////////////
 
     logic [31:0] tb_data;
+    logic [31:0] lfsr_value;
 
     initial begin
         $timeformat(-9, 0, "ns", 12); // 1: scale (ns=-9), 2: decimals, 3: suffix, 4: print-field width
@@ -460,14 +461,29 @@ module tb_croc_soc #(
         // load binary to sram
         jtag_load_hex(binary_path);
 
+
+        //Configure the LFSR
+        #250ns;
+        jtag_write_reg32(32'h2000_1004, 32'h1);
+        $display("[TB] LFSR seed written");
+
+         #2500ns;
+        // Enable the LFSR
+        jtag_write_reg32(32'h2000_1000, 32'h1);
+        $display("[TB] LFSR enabled");
+
+
         $display("@%t | [CORE] Start fetching instructions", $time);
         fetch_en_i = 1'b1;
 
+        #(ClkPeriod * 2000);
+
         // halt core
         jtag_halt();
-
+        jtag_read_reg32(32'h2000_1008, lfsr_value);
         // resume core
         jtag_resume();
+
 
         // wait for non-zero return value (written into core status register)
         $display("@%t | [CORE] Wait for end of code...", $time);

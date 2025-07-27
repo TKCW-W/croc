@@ -80,7 +80,8 @@ module user_domain import user_pkg::*; import croc_pkg::*; #(
     .NoRules   ( NumDemuxSbrRules               ),
     .addr_t    ( logic[SbrObiCfg.DataWidth-1:0] ),
     .rule_t    ( addr_map_rule_t                ),
-    .Napot     ( 1'b0                           )
+    .Napot     ( 1'b0                           ),
+    .idx_t     ( user_demux_outputs_e )
   ) i_addr_decode_periphs (
     .addr_i           ( user_sbr_obi_req_i.a.addr ),
     .addr_map_i       ( user_addr_map             ),
@@ -142,14 +143,14 @@ module user_domain import user_pkg::*; import croc_pkg::*; #(
   );
 
   // LFSR Subordinate
-  user_prng #(
+  user_lfsr #(
     .ObiCfg      ( SbrObiCfg     ),
     .obi_req_t   ( sbr_obi_req_t ),
     .obi_rsp_t   ( sbr_obi_rsp_t ),
     .W           (16),
     .TAPS        (16'hB400),
     .RESET_SEED  (16'hACE1)
-  ) i_prng (
+  ) i_user_lfsr (
     .clk_i,
     .rst_ni,
     .obi_req_i  ( user_lfsr_obi_req ),
