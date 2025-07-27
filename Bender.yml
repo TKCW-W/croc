@@ -62,6 +62,8 @@ sources:
   - target: any(simulation, verilator)
     files:
       - rtl/tb_croc_soc.sv
+    load_elf:
+      - bin/test_lfsr.elf
 
   - target: genesys2
     files:

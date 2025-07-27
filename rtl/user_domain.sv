@@ -142,6 +142,7 @@ module user_domain import user_pkg::*; import croc_pkg::*; #(
   );
 
   // LFSR Subordinate
+  // Corrected instantiation of user_prng / LFSR
   user_prng #(
     .ObiCfg      ( SbrObiCfg     ),
     .obi_req_t   ( sbr_obi_req_t ),
@@ -152,8 +153,8 @@ module user_domain import user_pkg::*; import croc_pkg::*; #(
   ) i_prng (
     .clk_i,
     .rst_ni,
-    .obi_req_i  ( user_rom_obi_req ),
-    .obi_rsp_o  ( user_rom_obi_rsp )
-  );
+    .obi_req_i  ( user_lfsr_obi_req ),   // ❗ correct signal
+    .obi_rsp_o  ( user_lfsr_obi_rsp )    // ❗ correct signal
+);
 
 endmodule
