@@ -50,9 +50,23 @@ module user_domain import user_pkg::*; import croc_pkg::*; #(
   sbr_obi_req_t user_error_obi_req;
   sbr_obi_rsp_t user_error_obi_rsp;
 
+  // ROM Subordinate Bus
+  sbr_obi_req_t user_rom_obi_req;
+  sbr_obi_rsp_t user_rom_obi_rsp;
+
+  // LFSR Subordinate Bus
+  sbr_obi_req_t user_lfsr_obi_req;
+  sbr_obi_rsp_t user_lfsr_obi_rsp;
+
   // Fanout into more readable signals
   assign user_error_obi_req              = all_user_sbr_obi_req[UserError];
   assign all_user_sbr_obi_rsp[UserError] = user_error_obi_rsp;
+  
+  assign user_rom_obi_req                = all_user_sbr_obi_req[UserRom];
+  assign all_user_sbr_obi_rsp[UserRom]   = user_rom_obi_rsp;
+
+  assign user_lfsr_obi_req                = all_user_sbr_obi_req[UserLfsr];
+  assign all_user_sbr_obi_rsp[UserLfsr]   = user_lfsr_obi_rsp;
 
 
   //-----------------------------------------------------------------------------------------------
@@ -113,6 +127,33 @@ module user_domain import user_pkg::*; import croc_pkg::*; #(
     .testmode_i ( testmode_i      ),
     .obi_req_i  ( user_error_obi_req ),
     .obi_rsp_o  ( user_error_obi_rsp )
+  );
+
+  // ROM Subordinate
+  user_rom #(
+    .ObiCfg      ( SbrObiCfg     ),
+    .obi_req_t   ( sbr_obi_req_t ),
+    .obi_rsp_t   ( sbr_obi_rsp_t )
+  ) i_rom (
+    .clk_i,
+    .rst_ni,
+    .obi_req_i  ( user_rom_obi_req ),
+    .obi_rsp_o  ( user_rom_obi_rsp )
+  );
+
+  // LFSR Subordinate
+  user_lfsr #(
+    .ObiCfg      ( SbrObiCfg     ),
+    .obi_req_t   ( sbr_obi_req_t ),
+    .obi_rsp_t   ( sbr_obi_rsp_t ),
+    .W           (16),
+    .TAPS        (16'hB400),
+    .RESET_SEED  (16'hACE1)
+  ) i_user_lfsr (
+    .clk_i,
+    .rst_ni,
+    .obi_req_i  ( user_lfsr_obi_req ),
+    .obi_rsp_o  ( user_lfsr_obi_rsp )
   );
 
 endmodule
