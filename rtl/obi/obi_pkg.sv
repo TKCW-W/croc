@@ -4,7 +4,7 @@
 
 // Michael Rogenmoser <michaero@iis.ee.ethz.ch>
 
-`include "common_cells/cf_math_pkg.sv"
+`include "../common_cells/cf_math_pkg.sv"
 
 package obi_pkg;
 

@@ -5,8 +5,8 @@
 // Authors:
 // - Philippe Sauter <phsauter@iis.ee.ethz.ch>
 
-`include "register_interface/typedef.svh"
-`include "obi/typedef.svh"
+`include "register_interface/include/register_interface/typedef.svh"
+`include "obi/include/obi/typedef.svh"
 
 package croc_pkg;
 

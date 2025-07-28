@@ -5,8 +5,8 @@
 // Author: Fabian Schuiki <fschuiki@iis.ee.ethz.ch>
 // Author: Paul Scheffler <paulsc@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
-`include "common_cells/assertions.svh"
+`include "include/common_cells/registers.svh"
+`include "include/common_cells/assertions.svh"
 
 module credit_counter #(
   parameter int unsigned NumCredits      = 0,

@@ -10,7 +10,7 @@
 
 // Author: Florian Zaruba <zarubaf@iis.ee.ethz.ch>
 
-`include "common_cells/assertions.svh"
+`include "include/common_cells/assertions.svh"
 
 module fifo_v3 #(
     parameter bit          FALL_THROUGH = 1'b0, // fifo is in fall-through mode

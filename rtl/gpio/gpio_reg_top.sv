@@ -7,7 +7,7 @@
 // - Luisa Wüthrich <lwuethri@student.ethz.ch>
 // - Philippe Sauter <phsauter@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+`include "../common_cells/include/common_cells/registers.svh"
 
 module gpio_reg_top import gpio_reg_pkg::*; #(
     /// The OBI configuration for all ports.

@@ -6,7 +6,7 @@
 // - Hannah Pochert  <hpochert@ethz.ch>
 // - Philippe Sauter <phsauter@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+`include "../common_cells/include/common_cells/registers.svh"
 
 /// Synchronizes incoming modem signals, outputs modem signals and handles loopback
 module obi_uart_modem import obi_uart_pkg::*; #()

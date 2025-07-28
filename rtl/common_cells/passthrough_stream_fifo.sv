@@ -6,8 +6,8 @@
 // - Thomas Benz  <tbenz@iis.ee.ethz.ch>
 // - Tobias Senti <tsenti@ethz.ch>
 
-`include "common_cells/assertions.svh"
-`include "common_cells/registers.svh"
+`include "include/common_cells/assertions.svh"
+`include "include/common_cells/registers.svh"
 
 /// Stream FIFO that does not cut the timing path. When full; pushing data is allowed if in
 /// the same cycle data is popped. Creates longer timing paths but can use buffer space more

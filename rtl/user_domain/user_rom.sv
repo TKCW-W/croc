@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: SHL-0.51
 
 // gives us the `FF(...) macro making it easy to have properly defined flip-flops
-`include "common_cells/registers.svh"
+`include "../common_cells/include/common_cells/registers.svh"
 
 //18.07.2025, copied from mlem branch which serves as the reference for the ROM for name signoff
 

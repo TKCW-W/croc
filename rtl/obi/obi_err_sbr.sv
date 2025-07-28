@@ -63,8 +63,8 @@ module obi_err_sbr #(
 
 endmodule
 
-`include "obi/typedef.svh"
-`include "obi/assign.svh"
+`include "include/obi/typedef.svh"
+`include "include/obi/assign.svh"
 
 module obi_err_sbr_intf #(
   /// The OBI configuration for all ports.

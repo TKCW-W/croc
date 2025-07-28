@@ -1,4 +1,4 @@
-`include "common_cells/registers.svh"
+`include "../common_cells/include/common_cells/registers.svh"
 
 
 module user_lfsr #(

@@ -8,7 +8,7 @@
 // CONDITIONS OF ANY KIND, either express or implied. See the License for the
 // specific language governing permissions and limitations under the License.
 
-`include "common_cells/registers.svh"
+`include "include/common_cells/registers.svh"
 
 /// Register with a simple stream-like ready/valid handshake.
 /// This register does not cut combinatorial paths on all control signals; if you need a complete

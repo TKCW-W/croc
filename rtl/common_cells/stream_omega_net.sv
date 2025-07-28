@@ -10,7 +10,7 @@
 
 // Author: Wolfgang Roenninger <wroennin@ethz.ch>
 
-`include "common_cells/assertions.svh"
+`include "include/common_cells/assertions.svh"
 
 /// Omega network using multiple `stream_xbar` as switches.
 ///

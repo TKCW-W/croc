@@ -6,7 +6,7 @@
 // - Hannah Pochert  <hpochert@ethz.ch>
 // - Philippe Sauter <phsauter@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+`include "../common_cells/include/common_cells/registers.svh"
 
 /// Calculated interrupts and stores them until reset by hardware or by reading the ISR register
 module obi_uart_interrupts import obi_uart_pkg::*; #()

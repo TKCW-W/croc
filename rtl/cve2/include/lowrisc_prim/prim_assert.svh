@@ -82,14 +82,14 @@
 //  ASSUME_I:     Assume an immediate property
 
 `ifdef VERILATOR
- `include "lowrisc_prim/prim_assert_dummy_macros.svh"
+ `include "prim_assert_dummy_macros.svh"
 `elsif SYNTHESIS
- `include "lowrisc_prim/prim_assert_dummy_macros.svh"
+ `include "prim_assert_dummy_macros.svh"
 `elsif YOSYS
- `include "lowrisc_prim/prim_assert_yosys_macros.svh"
+ `include "prim_assert_yosys_macros.svh"
  `define INC_ASSERT
 `else
- `include "lowrisc_prim/prim_assert_standard_macros.svh"
+ `include "prim_assert_standard_macros.svh"
  `define INC_ASSERT
 `endif
 
@@ -140,6 +140,6 @@
    `COVER(__name, __prop, __clk, __rst)                                                     \
 `endif
 
-`include "lowrisc_prim/prim_assert_sec_cm.svh"
+`include "prim_assert_sec_cm.svh"
 
 `endif // PRIM_ASSERT_SV

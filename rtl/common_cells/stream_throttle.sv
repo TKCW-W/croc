@@ -4,7 +4,7 @@
 //
 // Thomas Benz <tbenz@ethz.ch>
 
-`include "common_cells/registers.svh"
+`include "include/common_cells/registers.svh"
 
 /// Throttles a ready valid handshaked bus. The maximum number of outstanding transfers have to
 /// be set as a compile-time parameter, whereas the number of outstanding transfers can be set

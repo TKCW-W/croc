@@ -10,7 +10,8 @@
  * the read instruction.
  */
 
-`include "lowrisc_prim/prim_assert.svh"
+`include "include/lowrisc_prim/prim_assert.svh"
+`include "../common_cells/include/common_cells/assertions.svh"
 
 module cve2_if_stage import cve2_pkg::*; #(
   parameter int unsigned DmHaltAddr        = 32'h1A110800,

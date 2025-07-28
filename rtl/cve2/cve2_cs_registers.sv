@@ -10,7 +10,8 @@
  * Specification, draft version 1.11
  */
 
-`include "lowrisc_prim/prim_assert.svh"
+`include "include/lowrisc_prim/prim_assert.svh"
+`include "../common_cells/include/common_cells/assertions.svh"
 
 module cve2_cs_registers #(
   parameter bit               DbgTriggerEn      = 0,
@@ -971,7 +972,7 @@ import cve2_pkg::*;
     `ifdef CVE2_CUSTOM_PMP_RESET_VALUES
       `include "cve2/cve2_pmp_reset.svh"
     `else
-      `include "cve2/cve2_pmp_reset_default.svh"
+      `include "include/cve2/cve2_pmp_reset_default.svh"
     `endif
 
     pmp_mseccfg_t                pmp_mseccfg_q, pmp_mseccfg_d;

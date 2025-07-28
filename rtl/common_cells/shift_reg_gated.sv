@@ -10,7 +10,7 @@
 //
 // Description: A Simple shift register with ICG for arbitrary depth and types.
 
-`include "common_cells/registers.svh"
+`include "include/common_cells/registers.svh"
 
 module shift_reg_gated #(
   parameter int unsigned Depth = 32'd8,

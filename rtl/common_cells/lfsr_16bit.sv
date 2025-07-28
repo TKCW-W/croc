@@ -12,7 +12,7 @@
 // Date: 5.11.2018
 // Description: 16-bit LFSR
 
-`include "common_cells/assertions.svh"
+`include "include/common_cells/assertions.svh"
 
 // --------------
 // 16-bit LFSR

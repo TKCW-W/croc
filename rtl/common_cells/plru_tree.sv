@@ -14,7 +14,7 @@
 // Description: Pseudo Least Recently Used Tree (PLRU)
 // See: https://en.wikipedia.org/wiki/Pseudo-LRU
 
-`include "common_cells/assertions.svh"
+`include "include/common_cells/assertions.svh"
 
 module plru_tree #(
   parameter int unsigned ENTRIES = 16

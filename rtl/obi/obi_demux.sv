@@ -108,8 +108,8 @@ module obi_demux #(
 
 endmodule
 
-`include "obi/typedef.svh"
-`include "obi/assign.svh"
+`include "include/obi/typedef.svh"
+`include "include/obi/assign.svh"
 
 module obi_demux_intf #(
   /// The OBI configuration for all ports.

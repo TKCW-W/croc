@@ -7,7 +7,8 @@
   `define RVFI
 `endif
 
-`include "lowrisc_prim/prim_assert.svh"
+`include "include/lowrisc_prim/prim_assert.svh"
+`include "../common_cells/include/common_cells/assertions.svh"
 
 /**
  * Top level module of the ibex RISC-V core

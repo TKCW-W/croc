@@ -19,7 +19,7 @@
 // patterns. The additional cipher layers can only be used for an LFSR width
 // of 64bit, since the block cipher has been designed for that block length.
 
-`include "common_cells/assertions.svh"
+`include "include/common_cells/assertions.svh"
 
 module lfsr #(
   parameter int unsigned          LfsrWidth     = 64,   // [4,64]

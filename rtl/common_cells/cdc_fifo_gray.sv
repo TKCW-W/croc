@@ -95,8 +95,8 @@
 ///     -through [get_pins -hierarchical -filter async]
 /// ```
 
-`include "common_cells/registers.svh"
-`include "common_cells/assertions.svh"
+`include "include/common_cells/registers.svh"
+`include "include/common_cells/assertions.svh"
 
 (* no_ungroup *)
 (* no_boundary_optimization *)

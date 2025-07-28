@@ -5,7 +5,7 @@
 // Author: Samuel Riedel <sriedel@iis.ee.ethz.ch>
 // Author: Michael Rogenmoser <michaero@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+`include "../common_cells/include/common_cells/registers.svh"
 
 /// Handles atomics. Hence, it needs to be instantiated in front of a memory region over which the
 /// bus has exclusive access.
@@ -494,8 +494,8 @@ module obi_atop_resolver
 
 endmodule
 
-`include "obi/typedef.svh"
-`include "obi/assign.svh"
+`include "include/obi/typedef.svh"
+`include "include/obi/assign.svh"
 
 module obi_atop_resolver_intf
   import obi_pkg::*;

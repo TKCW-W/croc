@@ -4,7 +4,7 @@
 
 // Michael Rogenmoser <michaero@iis.ee.ethz.ch>
 
-`include "obi/assign.svh"
+`include "include/obi/assign.svh"
 
 /// An OBI multiplexer.
 module obi_mux #(
@@ -161,7 +161,7 @@ module obi_mux #(
 
 endmodule
 
-`include "obi/typedef.svh"
+`include "include/obi/typedef.svh"
 
 module obi_mux_intf #(
   /// The configuration of the subordinate ports (input ports).

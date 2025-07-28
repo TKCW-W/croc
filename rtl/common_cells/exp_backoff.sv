@@ -20,7 +20,7 @@
 // a successful trial (clr_i).
 //
 
-`include "common_cells/assertions.svh"
+`include "include/common_cells/assertions.svh"
 
 module exp_backoff #(
   /// Seed for 16bit LFSR

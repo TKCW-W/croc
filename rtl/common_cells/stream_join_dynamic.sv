@@ -11,7 +11,7 @@
 // Authors:
 // - Luca Colagrande <colluca@iis.ee.ethz.ch>
 
-`include "common_cells/assertions.svh"
+`include "include/common_cells/assertions.svh"
 
 // Stream join dynamic: Joins a parametrizable number of input streams (i.e. valid-ready
 // handshaking with dependency rules as in AXI4) to a single output stream. The subset of streams

@@ -7,7 +7,8 @@
  * Main controller of the processor
  */
 
-`include "lowrisc_prim/prim_assert.svh"
+`include "include/lowrisc_prim/prim_assert.svh"
+`include "../common_cells/include/common_cells/assertions.svh"
 
 module cve2_controller #(
  ) (

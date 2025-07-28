@@ -11,7 +11,7 @@
 //
 // Fabian Schuiki <fschuiki@iis.ee.ethz.ch>
 
-`include "common_cells/assertions.svh"
+`include "include/common_cells/assertions.svh"
 
 /// A clock domain crossing FIFO, using 2-phase hand shakes.
 ///

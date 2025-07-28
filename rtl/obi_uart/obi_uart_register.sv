@@ -6,7 +6,7 @@
 // - Hannah Pochert  <hpochert@ethz.ch>
 // - Philippe Sauter <phsauter@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+`include "../common_cells/include/common_cells/registers.svh"
 
 module obi_uart_register import obi_uart_pkg::*; #(
   /// The OBI configuration connected to this peripheral.

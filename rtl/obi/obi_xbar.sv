@@ -155,8 +155,8 @@ module obi_xbar #(
 
 endmodule
 
-`include "obi/typedef.svh"
-`include "obi/assign.svh"
+`include "include/obi/typedef.svh"
+`include "include/obi/assign.svh"
 
 module obi_xbar_intf #(
   /// The OBI configuration for the subordinate ports (input ports).

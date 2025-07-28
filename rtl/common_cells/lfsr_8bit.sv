@@ -13,7 +13,7 @@
 // Date: 12.11.2017
 // Description: 8-bit LFSR
 
-`include "common_cells/assertions.svh"
+`include "include/common_cells/assertions.svh"
 
 /// 8 bit Linear Feedback Shift register
 module lfsr_8bit #(
