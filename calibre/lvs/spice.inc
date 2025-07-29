@@ -1,0 +1,9 @@
+.INCLUDE /usr/pack/ihp-sg13-kgf/ihp/SG13G2_618_rev1.3.1/tech/Subckts/source.added
+.INCLUDE /usr/pack/ihp-sg13-kgf/open_ihp_sg13g2/sg13g2_stdcell/v3.2/cdl/sg13g2_stdcell.cdl
+.INCLUDE /usr/pack/ihp-sg13-kgf/open_ihp_sg13g2/sg13g2_io/v0.2/cdl/sg13g2_io.cdl
+.INCLUDE /usr/pack/ihp-sg13-kgf/open_ihp_sg13g2/sg13g2_sram/v2.1/cdl.dz/RM_IHPSG13_1P_1024x64_c2_bm_bist.cdl
+.INCLUDE /usr/pack/ihp-sg13-kgf/open_ihp_sg13g2/sg13g2_sram/v2.1/cdl.dz/RM_IHPSG13_1P_2048x64_c2_bm_bist.cdl
+.INCLUDE /usr/pack/ihp-sg13-kgf/open_ihp_sg13g2/sg13g2_sram/v2.1/cdl.dz/RM_IHPSG13_1P_256x48_c2_bm_bist.cdl
+.INCLUDE /usr/pack/ihp-sg13-kgf/open_ihp_sg13g2/sg13g2_sram/v2.1/cdl.dz/RM_IHPSG13_1P_256x64_c2_bm_bist.cdl
+.INCLUDE /usr/pack/ihp-sg13-kgf/open_ihp_sg13g2/sg13g2_sram/v2.1/cdl.dz/RM_IHPSG13_1P_512x64_c2_bm_bist.cdl
+.INCLUDE /usr/pack/ihp-sg13-kgf/open_ihp_sg13g2/sg13g2_sram/v2.1/cdl.dz/RM_IHPSG13_1P_64x64_c2_bm_bist.cdl

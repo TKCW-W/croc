@@ -8,7 +8,7 @@
 # cockpit root
 /.llamaconfig
 /tmp
-/calibre
+#/calibre
 /docs
 /technology
 /.setPDK.csh
@@ -75,8 +75,8 @@
 /klayout/*-example
 /klayout/start_klayout
 #openroad
-/openroad/out
+#/openroad/out
 /openroad/save
 #/openroad/src
 #yosys
-/yosys/out
+#/yosys/out
