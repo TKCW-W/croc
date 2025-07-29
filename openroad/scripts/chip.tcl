@@ -13,6 +13,13 @@ set netlist $::env(NETLIST)
 set top_design $::env(TOP_DESIGN)
 set report_dir $::env(REPORTS)
 set save_dir $::env(SAVE)
+
+#set proj_name "croc"
+#set netlist "../yosys/out/croc_chip_yosys.v"
+#set top_design "croc_chip"
+#set report_dir "reports"
+#set save_dir "save"
+
 set time [elapsed_run_time]
 set step_by_step_debug 0
 
@@ -72,7 +79,6 @@ utl::report "Create Power Grid"
 source scripts/power_grid.tcl
 save_checkpoint 00_${proj_name}.power_grid
 report_image "00_${proj_name}.power" true
-
 
 ###############################################################################
 # Initial Repair Netlist                                                      #
@@ -198,9 +204,9 @@ repair_clock_inverters
 utl::report "Clock Tree Synthesis"
 set_wire_rc -clock -layer Metal4
 clock_tree_synthesis -buf_list $ctsBuf -root_buf $ctsBufRoot \
-                     -sink_clustering_enable \
-                     -obstruction_aware \
-                     -balance_levels
+                    -sink_clustering_enable \
+                    -obstruction_aware \
+                    -balance_levels
 
 # Repair wire length between clock pad and clock-tree root
 utl::report "Repair clock nets"
@@ -309,13 +315,13 @@ repair_antennas -ratio_margin 30 -iterations 5
 utl::report "Detailed route"
 set_thread_count 8
 detailed_route -output_drc ${report_dir}/${log_id_str}_${proj_name}_route_drc.rpt \
-               -bottom_routing_layer Metal2 \
-               -top_routing_layer TopMetal1 \
-               -droute_end_iter 30 \
-               -drc_report_iter_step 5 \
-               -save_guide_updates \
-               -clean_patches \
-               -verbose 1
+            -bottom_routing_layer Metal2 \
+            -top_routing_layer TopMetal1 \
+            -droute_end_iter 30 \
+            -drc_report_iter_step 5 \
+            -save_guide_updates \
+            -clean_patches \
+            -verbose 1
 
 utl::report "Saving detailed route"
 save_checkpoint ${log_id_str}_${proj_name}.drt
@@ -355,5 +361,6 @@ write_sdc                      out/${proj_name}.sdc
 # write_spef out/${proj_name}.spef
 # read_spef  out/${proj_name}.spef; # readback parasitics for OpenSTA
 # report_metrics "${log_id_str}_${proj_name}.extract"
+
 
 exit
