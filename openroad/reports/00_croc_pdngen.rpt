@@ -1,0 +1,165 @@
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (787.0000, 1867.1000) - (793.0000, 1867.5400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (787.0000, 1874.6600) - (793.0000, 1875.1000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (787.0000, 2003.1800) - (793.0000, 2003.6200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (991.0000, 1867.1000) - (997.0000, 1867.5400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (991.0000, 1874.6600) - (997.0000, 1875.1000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (991.0000, 2003.1800) - (997.0000, 2003.6200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (1195.0000, 1867.1000) - (1201.0000, 1867.5400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (1195.0000, 1874.6600) - (1201.0000, 1875.1000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (1195.0000, 2003.1800) - (1201.0000, 2003.6200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (1399.0000, 1867.1000) - (1405.0000, 1867.5400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (1399.0000, 1874.6600) - (1405.0000, 1875.1000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VDD
+	bbox = (1399.0000, 2003.1800) - (1405.0000, 2003.6200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1742.3600) - (725.0000, 1742.8000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1749.9200) - (722.8800, 1750.3600) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1757.4800) - (722.8800, 1757.9200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1765.0400) - (722.8800, 1765.4800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1772.6000) - (722.8800, 1773.0400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1780.1600) - (722.8800, 1780.6000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1787.7200) - (722.8800, 1788.1600) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1795.2800) - (722.8800, 1795.7200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1802.8400) - (722.8800, 1803.2800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1810.4000) - (722.8800, 1810.8400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1817.9600) - (722.8800, 1818.4000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1825.5200) - (722.8800, 1825.9600) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1833.0800) - (722.8800, 1833.5200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1840.6400) - (722.8800, 1841.0800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1848.2000) - (722.8800, 1848.6400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1855.7600) - (722.8800, 1856.2000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1863.3200) - (722.8800, 1863.7600) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1878.4400) - (725.0000, 1878.8800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1886.0000) - (722.8800, 1886.4400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1893.5600) - (722.8800, 1894.0000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1901.1200) - (722.8800, 1901.5600) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1908.6800) - (722.8800, 1909.1200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1916.2400) - (722.8800, 1916.6800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1923.8000) - (722.8800, 1924.2400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1931.3600) - (722.8800, 1931.8000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1938.9200) - (722.8800, 1939.3600) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1946.4800) - (722.8800, 1946.9200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1954.0400) - (722.8800, 1954.4800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1961.6000) - (722.8800, 1962.0400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1969.1600) - (722.8800, 1969.6000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1976.7200) - (722.8800, 1977.1600) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1984.2800) - (722.8800, 1984.7200) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1991.8400) - (722.8800, 1992.2800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (719.0000, 1999.4000) - (725.0000, 1999.8400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (923.0000, 1742.3600) - (929.0000, 1742.8000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (923.0000, 1878.4400) - (929.0000, 1878.8800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (923.0000, 1999.4000) - (929.0000, 1999.8400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (1127.0000, 1742.3600) - (1133.0000, 1742.8000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (1127.0000, 1878.4400) - (1133.0000, 1878.8800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (1127.0000, 1999.4000) - (1133.0000, 1999.8400) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (1331.0000, 1742.3600) - (1337.0000, 1742.8000) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (1331.0000, 1878.4400) - (1337.0000, 1878.8800) on Layer -
+violation type: Obstructed - core_grid - Metal1 -> TopMetal2
+	srcs: net:VSS
+	bbox = (1331.0000, 1999.4000) - (1337.0000, 1999.8400) on Layer -
