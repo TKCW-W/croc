@@ -4538,8 +4538,8 @@
 
 === user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr ===
 
-   Number of wires:                 28
-   Number of wire bits:            310
+   Number of wires:                 31
+   Number of wire bits:            313
    Number of public wires:          15
    Number of public wire bits:     235
    Number of ports:                  4
@@ -4547,12 +4547,13 @@
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 24
+   Number of cells:                 27
      $adff                           5
      $adffe                          2
      $and                            1
      $eq                             2
-     $logic_not                      1
+     $logic_and                      2
+     $logic_not                      2
      $mux                            4
      $ne                             2
      $not                            1
@@ -4806,8 +4807,8 @@
          user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr      1
          user_rom$croc_chip.i_croc_soc.i_user.i_rom      1
 
-   Number of wires:               6522
-   Number of wire bits:          86502
+   Number of wires:               6525
+   Number of wire bits:          86505
    Number of public wires:        3604
    Number of public wire bits:   51279
    Number of ports:               2148
@@ -4815,7 +4816,7 @@
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               5430
+   Number of cells:               5433
      $add                           34
      $adff                         235
      $adffe                        310
@@ -4826,8 +4827,8 @@
      $ge                            27
      $gt                             7
      $le                            18
-     $logic_and                    210
-     $logic_not                    139
+     $logic_and                    212
+     $logic_not                    140
      $logic_or                      72
      $lt                            26
      $mux                         1314

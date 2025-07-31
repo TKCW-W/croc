@@ -13,12 +13,14 @@ VM_TIMING = 1
 VM_COVERAGE = 0
 # Parallel builds?  0/1 (from --output-split)
 VM_PARALLEL_BUILDS = 1
-# Tracing output mode?  0/1 (from --trace/--trace-fst)
+# Tracing output mode?  0/1 (from --trace-fst/--trace-saif/--trace-vcd)
 VM_TRACE = 1
-# Tracing output mode in VCD format?  0/1 (from --trace)
-VM_TRACE_VCD = 0
 # Tracing output mode in FST format?  0/1 (from --trace-fst)
 VM_TRACE_FST = 1
+# Tracing output mode in SAIF format?  0/1 (from --trace-saif)
+VM_TRACE_SAIF = 0
+# Tracing output mode in VCD format?  0/1 (from --trace-vcd)
+VM_TRACE_VCD = 0
 
 ### Object file lists...
 # Generated module classes, fast-path, compile with highest optimization
@@ -38,14 +40,6 @@ VM_CLASSES_FAST += \
 	Vtb_croc_soc___024root__DepSet_h0ddea910__11 \
 	Vtb_croc_soc___024root__DepSet_h0ddea910__12 \
 	Vtb_croc_soc___024root__DepSet_h0ddea910__13 \
-	Vtb_croc_soc___024root__DepSet_h0ddea910__14 \
-	Vtb_croc_soc___024root__DepSet_h0ddea910__15 \
-	Vtb_croc_soc___024root__DepSet_h0ddea910__16 \
-	Vtb_croc_soc___024root__DepSet_h0ddea910__17 \
-	Vtb_croc_soc___024root__DepSet_h0ddea910__18 \
-	Vtb_croc_soc___024root__DepSet_h0ddea910__19 \
-	Vtb_croc_soc___024root__DepSet_h0ddea910__20 \
-	Vtb_croc_soc___024root__DepSet_h0ddea910__21 \
 	Vtb_croc_soc___024root__DepSet_ha6051a75__0 \
 	Vtb_croc_soc___024root__DepSet_ha6051a75__1 \
 	Vtb_croc_soc___024root__DepSet_ha6051a75__2 \
@@ -71,7 +65,6 @@ VM_SUPPORT_SLOW += \
 	Vtb_croc_soc__Syms \
 	Vtb_croc_soc__Trace__0__Slow \
 	Vtb_croc_soc__TraceDecls__0__Slow \
-	Vtb_croc_soc__Trace__1__Slow \
 
 # Global classes, need linked once per executable, fast-path, compile with highest optimization
 VM_GLOBAL_FAST += \

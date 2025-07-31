@@ -35,14 +35,6 @@ class alignas(VL_CACHE_LINE_BYTES)Vtb_croc_soc__Syms final : public VerilatedSym
     Vtb_croc_soc___024root         TOP;
     Vtb_croc_soc_soc_ctrl_reg_pkg  TOP__soc_ctrl_reg_pkg;
 
-    // SCOPE NAMES
-    VerilatedScope __Vscope_tb_croc_soc;
-    VerilatedScope __Vscope_tb_croc_soc__jtag_init;
-    VerilatedScope __Vscope_tb_croc_soc__jtag_load_hex;
-    VerilatedScope __Vscope_tb_croc_soc__jtag_write__unnamedblk1;
-    VerilatedScope __Vscope_tb_croc_soc__jtag_write__unnamedblk2;
-    VerilatedScope __Vscope_tb_croc_soc__jtag_write_reg32__unnamedblk3;
-
     // CONSTRUCTORS
     Vtb_croc_soc__Syms(VerilatedContext* contextp, const char* namep, Vtb_croc_soc* modelp);
     ~Vtb_croc_soc__Syms();

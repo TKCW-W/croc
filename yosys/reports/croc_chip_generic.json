@@ -4235,8 +4235,8 @@
          "estimated_num_transistors": "0+"
       },
       "\\user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr": {
-         "num_wires":         40,
-         "num_wire_bits":     321,
+         "num_wires":         43,
+         "num_wire_bits":     322,
          "num_pub_wires":     13,
          "num_pub_wire_bits": 216,
          "num_ports":         4,
@@ -4244,18 +4244,18 @@
          "num_memories":      0,
          "num_memory_bits":   0,
          "num_processes":     0,
-         "num_cells":         134,
+         "num_cells":         137,
          "num_cells_by_type": {
-            "$_AND_": 7,
+            "$_AND_": 9,
             "$_DFFE_PN0P_": 9,
             "$_DFFE_PN1P_": 8,
             "$_DFF_PN0_": 23,
             "$_MUX_": 65,
-            "$_NOT_": 7,
+            "$_NOT_": 8,
             "$_OR_": 12,
             "$_XOR_": 3
          },
-         "estimated_num_transistors": "944+"
+         "estimated_num_transistors": "958+"
       },
       "\\user_rom$croc_chip.i_croc_soc.i_user.i_rom": {
          "num_wires":         11,
@@ -4278,8 +4278,8 @@
       }
    },
       "design": {
-         "num_wires":         14009,
-         "num_wire_bits":     107033,
+         "num_wires":         14012,
+         "num_wire_bits":     107034,
          "num_pub_wires":     3566,
          "num_pub_wire_bits": 49932,
          "num_ports":         2148,
@@ -4287,9 +4287,9 @@
          "num_memories":      0,
          "num_memory_bits":   0,
          "num_processes":     0,
-         "num_cells":         49565,
+         "num_cells":         49568,
          "num_cells_by_type": {
-            "$_AND_": 10713,
+            "$_AND_": 10715,
             "$_DFFE_PN0N_": 10,
             "$_DFFE_PN0P_": 3448,
             "$_DFFE_PN1P_": 33,
@@ -4297,7 +4297,7 @@
             "$_DFF_PN0_": 758,
             "$_DFF_PN1_": 26,
             "$_MUX_": 19967,
-            "$_NOT_": 3393,
+            "$_NOT_": 3394,
             "$_OR_": 8614,
             "$_XOR_": 2382,
             "RM_IHPSG13_1P_256x64_c2_bm_bist": 2,
@@ -4311,7 +4311,7 @@
             "sg13g2_inv_1": 1,
             "sg13g2_mux2_1": 4
          },
-         "estimated_num_transistors": "390936+"
+         "estimated_num_transistors": "390950+"
       }
 }
 

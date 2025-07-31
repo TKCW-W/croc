@@ -1,6 +1,6 @@
+  violation type: Metal Spacing
+    srcs: net:i_croc_soc/i_croc/i_core_wrap/i_ibex.cs_registers_i/_1174_ net:i_croc_soc/i_croc/i_core_wrap/i_ibex.cs_registers_i/_1179_ 
+    bbox = ( 1605.92, 1317.44 ) - ( 1605.98, 1317.64 ) on Layer Metal2
   violation type: Short
-    srcs: net:i_croc_soc/i_croc/i_core_wrap/_3660_ net:VSS 
-    bbox = ( 1334.3, 1251.08 ) - ( 1334.5, 1251.28 ) on Layer Metal2
-  violation type: Short
-    srcs: net:i_croc_soc/i_croc/i_core_wrap/i_ibex.cs_registers_i/_0906_ net:VDD 
-    bbox = ( 1607.39, 1307.78 ) - ( 1607.6, 1307.98 ) on Layer Metal2
+    srcs: net:i_croc_soc/i_croc/_01151_ net:VSS 
+    bbox = ( 1128.14, 1349.36 ) - ( 1128.34, 1349.56 ) on Layer Metal2

@@ -5789,7 +5789,7 @@ module \cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_re
     .A_WIDTH(32'd3),
     .Y_WIDTH(32'd1)
   ) \$auto$opt_dff.cc:220:make_patterns_logic$14881  (
-    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$14876 , \$auto$opt_dff.cc:194:make_patterns_logic$14874 , \$auto$opt_dff.cc:194:make_patterns_logic$14878  }),
+    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$14876 , \$auto$opt_dff.cc:194:make_patterns_logic$14878 , \$auto$opt_dff.cc:194:make_patterns_logic$14874  }),
     .Y(\$auto$opt_dff.cc:219:make_patterns_logic$14880 )
   );
   /* keep = "true" */
@@ -7441,7 +7441,7 @@ module \cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_
     .A_WIDTH(32'd9),
     .Y_WIDTH(32'd1)
   ) \$auto$opt_dff.cc:220:make_patterns_logic$14937  (
-    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$14934 , \$auto$opt_dff.cc:194:make_patterns_logic$14922 , \$auto$opt_dff.cc:194:make_patterns_logic$14924 , \$auto$opt_dff.cc:194:make_patterns_logic$14926 , \$auto$opt_dff.cc:194:make_patterns_logic$14928 , \$auto$opt_dff.cc:194:make_patterns_logic$14930 , \$auto$opt_dff.cc:194:make_patterns_logic$14918 , \$auto$opt_dff.cc:194:make_patterns_logic$14920 , \$auto$opt_dff.cc:194:make_patterns_logic$14932  }),
+    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$14934 , \$auto$opt_dff.cc:194:make_patterns_logic$14932 , \$auto$opt_dff.cc:194:make_patterns_logic$14920 , \$auto$opt_dff.cc:194:make_patterns_logic$14922 , \$auto$opt_dff.cc:194:make_patterns_logic$14924 , \$auto$opt_dff.cc:194:make_patterns_logic$14926 , \$auto$opt_dff.cc:194:make_patterns_logic$14928 , \$auto$opt_dff.cc:194:make_patterns_logic$14930 , \$auto$opt_dff.cc:194:make_patterns_logic$14918  }),
     .Y(\$auto$opt_dff.cc:219:make_patterns_logic$14936 )
   );
   \$reduce_or  #(
@@ -8195,7 +8195,7 @@ module \cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_
     .A_WIDTH(32'd9),
     .Y_WIDTH(32'd1)
   ) \$auto$opt_dff.cc:220:make_patterns_logic$14959  (
-    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$14946 , \$auto$opt_dff.cc:194:make_patterns_logic$14948 , \$auto$opt_dff.cc:194:make_patterns_logic$14950 , \$auto$opt_dff.cc:194:make_patterns_logic$14952 , \$auto$opt_dff.cc:194:make_patterns_logic$14954 , \$auto$opt_dff.cc:194:make_patterns_logic$14956 , \$auto$opt_dff.cc:194:make_patterns_logic$14942 , \$auto$opt_dff.cc:194:make_patterns_logic$14940 , \$auto$opt_dff.cc:194:make_patterns_logic$14944  }),
+    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$14946 , \$auto$opt_dff.cc:194:make_patterns_logic$14948 , \$auto$opt_dff.cc:194:make_patterns_logic$14950 , \$auto$opt_dff.cc:194:make_patterns_logic$14952 , \$auto$opt_dff.cc:194:make_patterns_logic$14954 , \$auto$opt_dff.cc:194:make_patterns_logic$14956 , \$auto$opt_dff.cc:194:make_patterns_logic$14940 , \$auto$opt_dff.cc:194:make_patterns_logic$14944 , \$auto$opt_dff.cc:194:make_patterns_logic$14942  }),
     .Y(\$auto$opt_dff.cc:219:make_patterns_logic$14958 )
   );
   \$reduce_or  #(
@@ -39416,7 +39416,7 @@ module \dmi_jtag$croc_chip.i_croc_soc.i_croc.i_dmi_jtag (clk_i, rst_ni, testmode
     .A_WIDTH(32'd5),
     .Y_WIDTH(32'd1)
   ) \$auto$opt_dff.cc:220:make_patterns_logic$15467  (
-    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$15460 , \$auto$opt_dff.cc:194:make_patterns_logic$15458 , \$auto$opt_dff.cc:194:make_patterns_logic$15456 , \$auto$opt_dff.cc:194:make_patterns_logic$15464 , \$auto$opt_dff.cc:194:make_patterns_logic$15462  }),
+    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$15462 , \$auto$opt_dff.cc:194:make_patterns_logic$15460 , \$auto$opt_dff.cc:194:make_patterns_logic$15458 , \$auto$opt_dff.cc:194:make_patterns_logic$15456 , \$auto$opt_dff.cc:194:make_patterns_logic$15464  }),
     .Y(\$auto$opt_dff.cc:219:make_patterns_logic$15466 )
   );
   \$reduce_and  #(
@@ -39424,7 +39424,7 @@ module \dmi_jtag$croc_chip.i_croc_soc.i_croc.i_dmi_jtag (clk_i, rst_ni, testmode
     .A_WIDTH(32'd3),
     .Y_WIDTH(32'd1)
   ) \$auto$opt_dff.cc:220:make_patterns_logic$15479  (
-    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$15476 , \$auto$opt_dff.cc:194:make_patterns_logic$15472 , \$auto$opt_dff.cc:194:make_patterns_logic$15462  }),
+    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$15462 , \$auto$opt_dff.cc:194:make_patterns_logic$15476 , \$auto$opt_dff.cc:194:make_patterns_logic$15472  }),
     .Y(\$auto$opt_dff.cc:219:make_patterns_logic$15478 )
   );
   \$reduce_and  #(
@@ -39432,7 +39432,7 @@ module \dmi_jtag$croc_chip.i_croc_soc.i_croc.i_dmi_jtag (clk_i, rst_ni, testmode
     .A_WIDTH(32'd2),
     .Y_WIDTH(32'd1)
   ) \$auto$opt_dff.cc:220:make_patterns_logic$15486  (
-    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$15483 , \$auto$opt_dff.cc:194:make_patterns_logic$15462  }),
+    .A({ \$auto$opt_dff.cc:194:make_patterns_logic$15462 , \$auto$opt_dff.cc:194:make_patterns_logic$15483  }),
     .Y(\$auto$opt_dff.cc:219:make_patterns_logic$15485 )
   );
   \$reduce_or  #(
@@ -73454,6 +73454,10 @@ endmodule
 
 /* src = "../rtl/user_domain/user_lfsr.sv:4.8" */
 module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_req_i, obi_rsp_o);
+  wire \$36y ;
+  wire \$37y ;
+  wire \$38y ;
+  wire \$39y ;
   wire \$auto$opt_dff.cc:194:make_patterns_logic$15939 ;
   wire \$auto$opt_dff.cc:194:make_patterns_logic$15941 ;
   wire \$auto$opt_dff.cc:194:make_patterns_logic$15943 ;
@@ -73464,7 +73468,6 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   wire [31:0] \$auto$wreduce.cc:514:run$14607 ;
   wire \$procmux$12771_CMP ;
   wire \$procmux$12785_Y ;
-  wire \$procmux$12788_CMP ;
   wire \$procmux$12811_Y ;
   wire \$procmux$12816_CMP ;
   /* src = "../rtl/user_domain/user_lfsr.sv:28.40" */
@@ -73523,6 +73526,51 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
     .A({ lfsr_reg_q[15], 1'h0, lfsr_reg_q[13:12], 1'h0, lfsr_reg_q[10], 10'h000 }),
     .Y(feedback)
   );
+  /* src = "../rtl/user_domain/user_lfsr.sv:87.31-87.46" */
+  \$eq  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd2),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) \$36  (
+    .A(addr_q[3:2]),
+    .B(1'h1),
+    .Y(\$36y )
+  );
+  /* src = "../rtl/user_domain/user_lfsr.sv:87.23-87.46" */
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) \$37  (
+    .A(we_q),
+    .B(\$36y ),
+    .Y(\$37y )
+  );
+  /* src = "../rtl/user_domain/user_lfsr.sv:87.21-87.47" */
+  \$logic_not  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) \$38  (
+    .A(\$37y ),
+    .Y(\$38y )
+  );
+  /* src = "../rtl/user_domain/user_lfsr.sv:87.9-87.47" */
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) \$39  (
+    .A(enable_q),
+    .B(\$38y ),
+    .Y(\$39y )
+  );
   \$adffe  #(
     .ARST_POLARITY(32'd0),
     .ARST_VALUE(16'hace1),
@@ -73551,32 +73599,32 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   );
   \$ne  #(
     .A_SIGNED(32'd0),
+    .A_WIDTH(32'd3),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd3),
+    .Y_WIDTH(32'd1)
+  ) \$auto$opt_dff.cc:195:make_patterns_logic$15940  (
+    .A({ req_q, \$39y , \$36y  }),
+    .B(3'h4),
+    .Y(\$auto$opt_dff.cc:194:make_patterns_logic$15939 )
+  );
+  \$ne  #(
+    .A_SIGNED(32'd0),
     .A_WIDTH(32'd4),
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd4),
     .Y_WIDTH(32'd1)
-  ) \$auto$opt_dff.cc:195:make_patterns_logic$15940  (
-    .A({ \$procmux$12788_CMP , enable_q, req_q, we_q }),
-    .B(4'ha),
-    .Y(\$auto$opt_dff.cc:194:make_patterns_logic$15939 )
+  ) \$auto$opt_dff.cc:195:make_patterns_logic$15942  (
+    .A({ req_q, we_q, \$39y , \$36y  }),
+    .B(4'h9),
+    .Y(\$auto$opt_dff.cc:194:make_patterns_logic$15941 )
   );
   \$reduce_bool  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd2),
     .Y_WIDTH(32'd1)
-  ) \$auto$opt_dff.cc:195:make_patterns_logic$15942  (
-    .A({ enable_q, req_q }),
-    .Y(\$auto$opt_dff.cc:194:make_patterns_logic$15941 )
-  );
-  \$ne  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd3),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd3),
-    .Y_WIDTH(32'd1)
   ) \$auto$opt_dff.cc:195:make_patterns_logic$15944  (
-    .A({ \$procmux$12788_CMP , enable_q, req_q }),
-    .B(3'h1),
+    .A({ req_q, \$39y  }),
     .Y(\$auto$opt_dff.cc:194:make_patterns_logic$15943 )
   );
   \$reduce_and  #(
@@ -73600,7 +73648,7 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
     .A_WIDTH(32'd2),
     .Y_WIDTH(32'd1)
   ) \$auto$opt_reduce.cc:131:opt_pmux$14434  (
-    .A({ \$procmux$12816_CMP , \$procmux$12788_CMP  }),
+    .A({ \$procmux$12816_CMP , \$36y  }),
     .Y(\$auto$opt_reduce.cc:137:opt_pmux$14435 )
   );
   \$adff  #(
@@ -73658,13 +73706,13 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
     .D(obi_req_i[41]),
     .Q(we_q)
   );
-  /* src = "../rtl/user_domain/user_lfsr.sv:88.7-88.50|../rtl/user_domain/user_lfsr.sv:87.5-88.50" */
+  /* src = "../rtl/user_domain/user_lfsr.sv:88.7-88.50|../rtl/user_domain/user_lfsr.sv:87.5-89.8" */
   \$mux  #(
     .WIDTH(32'd16)
   ) \$procmux$12764  (
     .A(wdata_q[15:0]),
     .B({ lfsr_reg_q[14:0], feedback }),
-    .S(enable_q),
+    .S(\$39y ),
     .Y(lfsr_reg_d)
   );
   /* full_case = 32'd1 */
@@ -73691,29 +73739,6 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
     .Y(\$auto$wreduce.cc:514:run$14606 [15:0])
   );
   /* full_case = 32'd1 */
-  /* src = "../rtl/user_domain/user_lfsr.sv:72.21-75.14|../rtl/user_domain/user_lfsr.sv:72.11-75.35" */
-  \$not  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) \$procmux$12785  (
-    .A(we_q),
-    .Y(\$procmux$12785_Y )
-  );
-  /* full_case = 32'd1 */
-  /* src = "../rtl/user_domain/user_lfsr.sv:72.11-75.35|../rtl/user_domain/user_lfsr.sv:66.7-83.14" */
-  \$eq  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd2),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) \$procmux$12788_CMP0  (
-    .A(addr_q[3:2]),
-    .B(1'h1),
-    .Y(\$procmux$12788_CMP )
-  );
-  /* full_case = 32'd1 */
   /* src = "../rtl/user_domain/user_lfsr.sv:78.11-80.31|../rtl/user_domain/user_lfsr.sv:66.7-83.14" */
   \$pmux  #(
     .S_WIDTH(32'd2),
@@ -73733,6 +73758,16 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   ) \$procmux$12816_CMP0  (
     .A(addr_q[3:2]),
     .Y(\$procmux$12816_CMP )
+  );
+  /* full_case = 32'd1 */
+  /* src = "../rtl/user_domain/user_lfsr.sv:68.21-68.43|../rtl/user_domain/user_lfsr.sv:68.11-69.31" */
+  \$not  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) \$procmux$12823  (
+    .A(we_q),
+    .Y(\$procmux$12785_Y )
   );
   /* full_case = 32'd1 */
   /* src = "../rtl/user_domain/user_lfsr.sv:78.11-80.31|../rtl/user_domain/user_lfsr.sv:66.7-83.14" */

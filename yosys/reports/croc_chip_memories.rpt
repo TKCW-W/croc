@@ -4142,8 +4142,8 @@
 
 === user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr ===
 
-   Number of wires:                 34
-   Number of wire bits:            381
+   Number of wires:                 37
+   Number of wire bits:            384
    Number of public wires:          21
    Number of public wire bits:     306
    Number of ports:                  4
@@ -4151,12 +4151,13 @@
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 24
+   Number of cells:                 27
      $adff                           5
      $adffe                          2
      $and                            1
      $eq                             2
-     $logic_not                      1
+     $logic_and                      2
+     $logic_not                      2
      $mux                            4
      $ne                             2
      $not                            1
@@ -4407,8 +4408,8 @@
          user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr      1
          user_rom$croc_chip.i_croc_soc.i_user.i_rom      1
 
-   Number of wires:               6870
-   Number of wire bits:          90091
+   Number of wires:               6873
+   Number of wire bits:          90094
    Number of public wires:        4045
    Number of public wire bits:   65983
    Number of ports:               2148
@@ -4416,7 +4417,7 @@
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               5035
+   Number of cells:               5038
      $add                           37
      $adff                         235
      $adffe                        313
@@ -4429,8 +4430,8 @@
      $ge                            27
      $gt                             7
      $le                            18
-     $logic_and                    210
-     $logic_not                    139
+     $logic_and                    212
+     $logic_not                    140
      $logic_or                      72
      $lt                            26
      $mem_v2                         3

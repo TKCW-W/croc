@@ -83,11 +83,11 @@ module user_lfsr #(
       endcase
     end
 
-    // Advance LFSR when enabled
-    if (enable_q)
+  // Advance LFSR only when enabled *and* not seeding right now
+    if (enable_q && !(we_q && addr_idx==2'b01)) begin
       lfsr_reg_d = {lfsr_reg_q[W-2:0], feedback};
+    end
   end
-
   // === OBI Response Channel ===
   assign obi_rsp_o.gnt            = obi_req_i.req;
   assign obi_rsp_o.rvalid         = req_q;       // Valid response for last request

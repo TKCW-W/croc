@@ -440,7 +440,7 @@ REPORT FILE NAME:         croc_chip.lvs.report
 LAYOUT NAME:              /scratch/vlsi2_12fs25/croc_drc/calibre/../calibre/lvs/croc_chip.lay.net ('croc_chip')
 SOURCE NAME:              /scratch/vlsi2_12fs25/croc_drc/calibre/lvs/croc_chip.spice ('croc_chip')
 RULE FILE:                /scratch/vlsi2_12fs25/croc_drc/calibre/../calibre/lvs/_lvs.tvf_
-CREATION TIME:            Wed Jul 30 00:18:20 2025
+CREATION TIME:            Thu Jul 31 01:51:45 2025
 CURRENT DIRECTORY:        /scratch/vlsi2_12fs25/croc_drc/calibre/lvs
 USER NAME:                vlsi2_12fs25
 CALIBRE VERSION:          v2021.3_35.19    Wed Sep 1 15:25:28 PDT 2021
@@ -729,16 +729,16 @@ INITIAL NUMBERS OF OBJECTS
                 ------    ------         --------------
  Ports:             52        52
 
- Nets:          363161    363280    *
+ Nets:          362558    362691    *
 
- Instances:     662039    590360    *    M (4 pins)
+ Instances:     660003    589332    *    M (4 pins)
                  99118     99118         R (2 pins): (p n)
                    249       249         R (3 pins): (p n) sub
-                  6752      6752         D (2 pins)
+                  7802      7802         D (2 pins)
                   1303         0    *    ptap1 (2 pins): TIE SUB
                      0       555    *    ptap1 (2 pins): TIE SUB
                 ------    ------
- Total Inst:    769461    697034
+ Total Inst:    768475    697056
 
 
 NUMBERS OF OBJECTS AFTER TRANSFORMATION
@@ -748,20 +748,20 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
                 ------    ------         --------------
  Ports:             51        51
 
- Nets:          241438    241438
+ Nets:          241239    241239
 
- Instances:     400527    400527         M (4 pins)
+ Instances:     400291    400291         M (4 pins)
                  66836     66836         R (2 pins): (p n)
                     49        49         R (3 pins): (p n) sub
-                   848       848         D (2 pins)
-                 63231     63231         SM2 (4 pins)
-                  7621      7621         SM3 (5 pins)
-                   647       647         SM4 (6 pins)
-                  5521      5521         SPM_2_1 (5 pins)
-                  1337      1337         SPM_2_2 (6 pins)
-                   745       745         SPM_2_2_1 (7 pins)
+                   850       850         D (2 pins)
+                 63001     63001         SM2 (4 pins)
+                  7590      7590         SM3 (5 pins)
+                   648       648         SM4 (6 pins)
+                  5414      5414         SPM_2_1 (5 pins)
+                  1339      1339         SPM_2_2 (6 pins)
+                   747       747         SPM_2_2_1 (7 pins)
                 ------    ------
- Total Inst:    547362    547362
+ Total Inst:    546765    546765
 
 
        * = Number of objects in layout different from number in source.
@@ -778,24 +778,24 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
                   -------    -------    ---------    ---------    ---------
    Ports:              51         51            0            0
 
-   Nets:           241438     241438            0            0
+   Nets:           241239     241239            0            0
 
    Instances:         338        338            0            0    M(sg13_hv_nmos)
                       322        322            0            0    M(sg13_hv_pmos)
-                   217387     217387            0            0    M(sg13_lv_nmos)
-                   182480     182480            0            0    M(sg13_lv_pmos)
+                   216951     216951            0            0    M(sg13_lv_nmos)
+                   182680     182680            0            0    M(sg13_lv_pmos)
                     66836      66836            0            0    R(lvsres)
                        49         49            0            0    R(res_rppd)
-                      428        428            0            0    D(dantenna)
-                      420        420            0            0    D(dpantenna)
-                    63231      63231            0            0    SM2
-                     7621       7621            0            0    SM3
-                      647        647            0            0    SM4
-                     5521       5521            0            0    SPM_2_1
-                     1337       1337            0            0    SPM_2_2
-                      745        745            0            0    SPM_2_2_1
+                      429        429            0            0    D(dantenna)
+                      421        421            0            0    D(dpantenna)
+                    63001      63001            0            0    SM2
+                     7590       7590            0            0    SM3
+                      648        648            0            0    SM4
+                     5414       5414            0            0    SPM_2_1
+                     1339       1339            0            0    SPM_2_2
+                      747        747            0            0    SPM_2_2_1
                   -------    -------    ---------    ---------
-   Total Inst:     547362     547362            0            0
+   Total Inst:     546765     546765            0            0
 
 
 o Statistics:
@@ -803,22 +803,22 @@ o Statistics:
    1303 layout instances were filtered and their adjoining nets shorted.
    555 source instances were filtered and their adjoining nets shorted.
 
-   480 layout nets were deep shorted to 1.
+   466 layout nets were deep shorted to 1.
    598 source nets were deep shorted to 1.
 
    2 layout ports were deep shorted to 1.
    2 source ports were deep shorted to 1.
 
-   116332 layout mos transistors were reduced to 32369.
-     83963 mos transistors were deleted by parallel reduction.
-   22224 source mos transistors were reduced to 9940.
-     12284 mos transistors were deleted by parallel reduction.
+   115588 layout mos transistors were reduced to 32573.
+     83015 mos transistors were deleted by parallel reduction.
+   22296 source mos transistors were reduced to 9952.
+     12344 mos transistors were deleted by parallel reduction.
 
    64750 series layout resistors were reduced to 32268.  32482 connecting nets were deleted.
    64750 series source resistors were reduced to 32268.  32482 connecting nets were deleted.
 
-   6574 parallel layout diodes were reduced to 670.
-   6574 parallel source diodes were reduced to 670.
+   7600 parallel layout diodes were reduced to 648.
+   7600 parallel source diodes were reduced to 648.
 
    72 nets were matched arbitrarily.
 
@@ -852,50 +852,50 @@ o Ambiguity Resolution Points:
        X31/X55/6                                                 Xpad_vddio0/net1
        X30/X1/6                                                  Xpad_vddio3/net1
        X24/X54/6                                                 Xpad_vddio2/net1
-       X27/5519                                                  net446
-       X27/11227                                                 net470
-       X26/11784                                                 net426
-       X26/6100                                                  net448
-       X26/9971                                                  net468
-       X27/11218                                                 \i_croc_soc/i_croc/_00883_
-       X26/9790                                                  \i_croc_soc/i_croc/_00876_
-       X24/X1614/X149/80                                         X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/a_tiel
-       X27/9090                                                  net460
-       X27/11222                                                 net459
-       X26/9933                                                  net432
-       X26/9943                                                  net431
-       X26/11755                                                 net435
-       X26/9818                                                  net434
-       X27/9080                                                  net453
-       X27/9094                                                  net452
-       X27/9071                                                  net450
-       X27/9056                                                  net454
-       X27/9065                                                  net455
-       X27/9081                                                  net456
-       X26/9788                                                  net438
-       X26/5834                                                  net437
-       X26/5843                                                  net439
-       X26/9761                                                  net440
-       X26/9785                                                  net441
-       X26/9812                                                  net442
-       X24/X1614/X150/X178/5                                     X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI15<1>/net2
-       X24/X1614/X150/X181/5                                     X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI15<0>/net2
-       X24/X1614/X150/X177/5                                     X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<3>/net2
-       X24/X1614/X150/X179/5                                     X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<2>/net2
-       X24/X1614/X150/X176/5                                     X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<0>/net2
-       X24/X1614/X150/X180/5                                     X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<1>/net2
-       X25/X12290/X150/X178/5                                    X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<0>/net2
-       X25/X12290/X150/X181/5                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<2>/net2
-       X25/X12290/X150/X177/5                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI15<1>/net2
-       X25/X12290/X150/X179/5                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI15<0>/net2
-       X25/X12290/X150/X176/5                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<3>/net2
-       X24/X1614/X138/X0/X0/6                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_DLYH/XIDM<5>/vdd_r
-       X24/X1614/X140/X0/X1/6                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_DLYH/XIDM<3>/vdd_r
-       X24/X1614/X136/6                                          X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYL/XIDM<7>/vdd_r
-       X24/X1614/X138/X1/X0/6                                    X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYL/XIDM<4>/vdd_r
-       X25/X12290/X140/X0/X0/6                                   X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_DLYL/XIDM<5>/vdd_r
-       X24/X1614/X139/X1/X1/6                                    X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYH/XIDM<7>/vdd_r
-       X25/X12290/X139/X1/X1/6                                   X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYL/XIDM<2>/vdd_r
+       X27/5862                                                  net470
+       X27/5693                                                  net446
+       X27/5624                                                  net448
+       X26/10029                                                 net426
+       X27/9409                                                  net468
+       X27/9445                                                  \i_croc_soc/i_croc/_00883_
+       X26/5962                                                  \i_croc_soc/i_croc/_00876_
+       X24/X1776/X149/80                                         X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/a_tiel
+       X27/9515                                                  net435
+       1199                                                      net434
+       X27/9405                                                  net460
+       X27/9433                                                  net459
+       X27/9410                                                  net432
+       X27/9406                                                  net431
+       X27/9419                                                  net453
+       X27/9374                                                  net452
+       X27/9424                                                  net450
+       X27/9385                                                  net454
+       X27/5654                                                  net455
+       X27/5657                                                  net456
+       X26/10107                                                 net438
+       X26/5950                                                  net437
+       X26/10126                                                 net439
+       X26/10114                                                 net440
+       X26/10118                                                 net441
+       X26/10110                                                 net442
+       X24/X1776/X150/X178/5                                     X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI15<1>/net2
+       X24/X1776/X150/X181/5                                     X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI15<0>/net2
+       X24/X1776/X150/X177/5                                     X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<3>/net2
+       X24/X1776/X150/X179/5                                     X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<2>/net2
+       X24/X1776/X150/X176/5                                     X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<0>/net2
+       X24/X1776/X150/X180/5                                     X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<1>/net2
+       X25/X13634/X150/X178/5                                    X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<0>/net2
+       X25/X13634/X150/X181/5                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<2>/net2
+       X25/X13634/X150/X177/5                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI15<1>/net2
+       X25/X13634/X150/X179/5                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI15<0>/net2
+       X25/X13634/X150/X176/5                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_COLDEC/XI17<3>/net2
+       X25/X13634/X137/X1/6                                      X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYL/XIDM<6>/vdd_r
+       X25/X13634/X138/X1/X0/6                                   X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYH/XIDM<6>/vdd_r
+       X24/X1776/X139/X0/X0/6                                    X\i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/XA_DLYH/XIDM<4>/vdd_r
+       X25/X13634/X139/X1/X0/6                                   X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYL/XIDM<7>/vdd_r
+       X25/X13634/X140/X0/X0/6                                   X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYL/XIDM<5>/vdd_r
+       X24/X1776/X139/X1/X0/6                                    X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYL/XIDM<1>/vdd_r
+       X25/X13634/X138/X0/X0/6                                   X\i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/XA_DLYH/XIDM<1>/vdd_r
 
 
 

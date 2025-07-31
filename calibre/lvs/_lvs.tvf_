@@ -11,7 +11,7 @@ tvf::set_global_variable globPort {NO}
 
 tvf::VERBATIM {
 //
-//  Rule file generated on Wed Jul 30 00:18:06 CEST 2025
+//  Rule file generated on Thu Jul 31 01:51:29 CEST 2025
 //     by Calibre Interactive - LVS (v2021.3_35.19)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
@@ -24,7 +24,7 @@ tvf::VERBATIM {
 
 // +++ CUSTOMIZATION SETTINGS END +++ 
 
-LAYOUT PATH  "/scratch/vlsi2_12fs25/croc_drc/calibre/drc/croc_chip.gds"
+LAYOUT PATH  "/scratch/vlsi2_12fs25/croc_drc/klayout/croc_chip.gds"
 LAYOUT PRIMARY "croc_chip"
 LAYOUT SYSTEM GDSII
 

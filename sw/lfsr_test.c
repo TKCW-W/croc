@@ -31,41 +31,40 @@ int main() {
 
     for(volatile int i = 0; i < 128; i++) {}
 
-    //Set a seed to the LFSR module
+    //Start LFSR test 
+   
+    //TEST1: Check seed can be set correctly; 
     *reg32(USER_LFSR_BASE_ADDR, 0x4) = 0x1;
+    uint32_t lfsr_value = *reg32(USER_LFSR_BASE_ADDR, 0x8);
+    if(lfsr_value == 0x1){
+        printf("TEST1:Seed set correctly, seed: %x\n", lfsr_value);
+    }else{
+        printf("TEST1:Seed set incorrectly, read value: %x\n", lfsr_value);
+    }
+
 
     for(volatile int i = 0; i < 32; i++) {}
 
-    //Check the seed value is written as expected
-    uint32_t lfsr_value = *reg32(USER_LFSR_BASE_ADDR, 0x8);
-    printf("LFSR seed set correctly as: %x \n", lfsr_value);
-
-    //Enable the LFSR, start generating pseudo random numbers
-    *reg32(USER_LFSR_BASE_ADDR, 0x0) = 0x1;
-
-    //Read out the current generated lfsr value
-    lfsr_value = *reg32(USER_LFSR_BASE_ADDR, 0x8);
-    printf("Current generated number is: %x \n", lfsr_value);
-
-    //Disable the LFSR
-    *reg32(USER_LFSR_BASE_ADDR, 0x0) = 0x0;
-
-    //Read out the current generated lfsr value
-    //lfsr_value = *reg32(USER_LFSR_BASE_ADDR, 0x8);
+    //TEST2: Check LFSR can be enabled and generating sequence correctly by inspecting the waveform;
+    *reg32(USER_LFSR_BASE_ADDR, 0x0) = 0x1; 
     
-    // Change to another seed and enable
+    for(volatile int i = 0; i < 7; i++) {}
+
+    lfsr_value = *reg32(USER_LFSR_BASE_ADDR, 0x8);
+    
+    printf("TEST2:Current read value: %x\n", lfsr_value);
+
+
+    //TEST3: Check we can switch the seed while the LFSR enabled, and sequence would be generated with the new seed
     *reg32(USER_LFSR_BASE_ADDR, 0x4) = 0x5;
-    //printf("LFSR seed reset correctly as: %x \n", lfsr_value);
-
-    //Enable the LFSR, start generating pseudo random numbers
-    *reg32(USER_LFSR_BASE_ADDR, 0x0) = 0x1;
-
-    //Disable the LFSR
+    lfsr_value = *reg32(USER_LFSR_BASE_ADDR, 0x8);
+    printf("TEST3:Current generated number with seed 0x5 is: %x \n", lfsr_value);//Confirm with wave form this is correctly generated as expected
+    
+    //TEST4: Check we can disenable the LFSR
     *reg32(USER_LFSR_BASE_ADDR, 0x0) = 0x0;
 
     //Read out the current generated lfsr value
     lfsr_value = *reg32(USER_LFSR_BASE_ADDR, 0x8);
-    printf("Current generated number is: %x", lfsr_value);
 
     for(volatile int i = 0; i < 64; i++) {}
 

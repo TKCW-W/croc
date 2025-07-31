@@ -145426,13 +145426,17 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   wire \$16y ;
   wire \$1y ;
   wire \$23y ;
+  wire \$36y ;
+  wire \$37y ;
   wire \$38y ;
   wire \$39y ;
   wire \$3y ;
-  wire \$41y ;
   wire \$42y ;
-  wire \$44y ;
+  wire \$43y ;
   wire \$45y ;
+  wire \$46y ;
+  wire \$48y ;
+  wire \$49y ;
   wire \$4y ;
   wire \$6y ;
   wire \$7y ;
@@ -145449,8 +145453,8 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   wire [15:0] \$lfsr_reg_d$26 ;
   /* src = "../rtl/user_domain/user_lfsr.sv:65.5-84.8" */
   wire [15:0] \$lfsr_reg_d$31 ;
-  /* src = "../rtl/user_domain/user_lfsr.sv:87.5-88.50" */
-  wire [15:0] \$lfsr_reg_d$36 ;
+  /* src = "../rtl/user_domain/user_lfsr.sv:87.5-89.8" */
+  wire [15:0] \$lfsr_reg_d$40 ;
   wire [15:0] \$procmux$12764_Y ;
   wire \$procmux$12765_CMP ;
   wire \$procmux$12768_Y ;
@@ -145643,29 +145647,74 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
     .A(rst_ni),
     .Y(\$3y )
   );
+  /* src = "../rtl/user_domain/user_lfsr.sv:87.31-87.46" */
+  \$eq  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd2),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd2),
+    .Y_WIDTH(32'd1)
+  ) \$36  (
+    .A(addr_idx),
+    .B(2'h1),
+    .Y(\$36y )
+  );
+  /* src = "../rtl/user_domain/user_lfsr.sv:87.23-87.46" */
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) \$37  (
+    .A(we_q),
+    .B(\$36y ),
+    .Y(\$37y )
+  );
+  /* src = "../rtl/user_domain/user_lfsr.sv:87.21-87.47" */
   \$logic_not  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
   ) \$38  (
-    .A(rst_ni),
+    .A(\$37y ),
     .Y(\$38y )
   );
-  \$logic_not  #(
+  /* src = "../rtl/user_domain/user_lfsr.sv:87.9-87.47" */
+  \$logic_and  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) \$41  (
-    .A(rst_ni),
-    .Y(\$41y )
+  ) \$39  (
+    .A(enable_q),
+    .B(\$38y ),
+    .Y(\$39y )
   );
   \$logic_not  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) \$44  (
+  ) \$42  (
     .A(rst_ni),
-    .Y(\$44y )
+    .Y(\$42y )
+  );
+  \$logic_not  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) \$45  (
+    .A(rst_ni),
+    .Y(\$45y )
+  );
+  \$logic_not  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) \$48  (
+    .A(rst_ni),
+    .Y(\$48y )
   );
   \$logic_not  #(
     .A_SIGNED(32'd0),
@@ -145771,7 +145820,7 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
     .D(we_d),
     .Q(we_q)
   );
-  /* src = "../rtl/user_domain/user_lfsr.sv:88.7-88.50|../rtl/user_domain/user_lfsr.sv:87.5-88.50" */
+  /* src = "../rtl/user_domain/user_lfsr.sv:88.7-88.50|../rtl/user_domain/user_lfsr.sv:87.5-89.8" */
   \$mux  #(
     .WIDTH(32'd16)
   ) \$procmux$12764  (
@@ -146301,7 +146350,7 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   assign addr_d = obi_req_i[73:42];
   assign id_d = obi_req_i[4:2];
   assign wdata_d = obi_req_i[36:5];
-  assign lfsr_reg_d = \$lfsr_reg_d$36 ;
+  assign lfsr_reg_d = \$lfsr_reg_d$40 ;
   assign seed_d = \$seed_d$32 ;
   assign enable_d = \$enable_d$33 ;
   assign rsp_data = \$rsp_data$34 ;
@@ -146312,8 +146361,8 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   assign obi_rsp_o[6:4] = id_q;
   assign obi_rsp_o[3] = rsp_err;
   assign obi_rsp_o[2] = 1'h0;
-  assign \$procmux$12765_CMP  = enable_q;
-  assign \$lfsr_reg_d$36  = \$procmux$12764_Y ;
+  assign \$procmux$12765_CMP  = \$39y ;
+  assign \$lfsr_reg_d$40  = \$procmux$12764_Y ;
   assign \$procmux$12769_CMP  = \$23y ;
   assign \$procmux$12773_CMP  = req_q;
   assign \$rsp_err$25  = \$procmux$12772_Y ;
@@ -146360,11 +146409,11 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   assign \$10y  = rst_ni;
   assign \$13y  = rst_ni;
   assign \$16y  = rst_ni;
+  assign \$46y  = rst_ni;
+  assign \$49y  = rst_ni;
   assign \$4y  = rst_ni;
   assign \$7y  = rst_ni;
-  assign \$39y  = rst_ni;
-  assign \$42y  = rst_ni;
-  assign \$45y  = rst_ni;
+  assign \$43y  = rst_ni;
 endmodule
 
 /* src = "../rtl/user_domain/user_rom.sv:11.8" */

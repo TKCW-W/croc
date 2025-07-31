@@ -463,24 +463,24 @@ module tb_croc_soc #(
 
 
         //Configure the LFSR
-        #250ns;
-        jtag_write_reg32(32'h2000_1004, 32'h1);
-        $display("[TB] LFSR seed written");
+        //#250ns;
+        //jtag_write_reg32(32'h2000_1004, 32'h1);
+        //$display("[TB] LFSR seed written");
 
-         #2500ns;
+         //#2500ns;
         // Enable the LFSR
-        jtag_write_reg32(32'h2000_1000, 32'h1);
-        $display("[TB] LFSR enabled");
+        //jtag_write_reg32(32'h2000_1000, 32'h1);
+        //$display("[TB] LFSR enabled");
 
         $display("@%t | [CORE] Start fetching instructions", $time);
         fetch_en_i = 1'b1;
 
         
-        #(ClkPeriod * 2000);
+        //#(ClkPeriod * 2000);
 
         // halt core
         jtag_halt();
-        jtag_read_reg32(32'h2000_1008, lfsr_value);
+        //jtag_read_reg32(32'h2000_1008, lfsr_value);
         // resume core
         jtag_resume();
 

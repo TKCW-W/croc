@@ -3608,8 +3608,8 @@
 
 === user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr ===
 
-   Number of wires:                137
-   Number of wire bits:           1062
+   Number of wires:                141
+   Number of wire bits:           1066
    Number of public wires:          24
    Number of public wire bits:     355
    Number of ports:                  4
@@ -3617,10 +3617,11 @@
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 69
+   Number of cells:                 73
      $aldff                          8
-     $eq                            10
-     $logic_not                     13
+     $eq                            11
+     $logic_and                      2
+     $logic_not                     14
      $mux                           36
      $pmux                           1
      $reduce_xor                     1
@@ -4428,8 +4429,8 @@
          user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr      1
          user_rom$croc_chip.i_croc_soc.i_user.i_rom      1
 
-   Number of wires:              18686
-   Number of wire bits:         177962
+   Number of wires:              18690
+   Number of wire bits:         177966
    Number of public wires:        4120
    Number of public wire bits:   66964
    Number of ports:               2148
@@ -4437,7 +4438,7 @@
    Number of memories:               3
    Number of memory bits:          356
    Number of processes:              0
-   Number of cells:               9991
+   Number of cells:               9995
      $add                           62
      $aldff                        565
      $and                          754
@@ -4445,12 +4446,12 @@
      $bwmux                         35
      $demux                        116
      $dff                           10
-     $eq                          1744
+     $eq                          1745
      $ge                           100
      $gt                            19
      $le                            35
-     $logic_and                    291
-     $logic_not                    731
+     $logic_and                    293
+     $logic_not                    732
      $logic_or                      78
      $lt                           180
      $meminit                        2

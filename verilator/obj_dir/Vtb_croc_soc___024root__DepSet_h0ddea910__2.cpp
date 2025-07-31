@@ -7,17 +7,16 @@
 #include "Vtb_croc_soc___024root.h"
 
 VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_soc___024root* vlSelf) {
-    (void)vlSelf;  // Prevent unused variable warning
-    Vtb_croc_soc__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4\n"); );
+    Vtb_croc_soc__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
-    IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs;
-    __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs = 0;
     CData/*7:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__address;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__address = 0;
     IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__data;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__data = 0;
+    QData/*40:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__data_out;
+    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__data_out = 0;
     CData/*1:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__op;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__op = 0;
     IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__trial_idx;
@@ -316,6 +315,8 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__address = 0;
     IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__data;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__data = 0;
+    QData/*40:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__data_out;
+    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__data_out = 0;
     CData/*1:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__op;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__op = 0;
     IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__trial_idx;
@@ -613,13 +614,19 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
     // Body
     if (vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__wait_cmd) {
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__address = 0x16U;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__data_out = 0;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__data_out = 0ULL;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__op = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__op = 0U;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__trial_idx = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__trial_idx = 0U;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__wait_cycles = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__wait_cycles = 8U;
         if ((0U != __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__trial_idx)) {
             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset = 0x10000U;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2055__data 
                 = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2055__unnamedblk2__DOT__i = 0;
             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data_packed 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2055__data;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2055__unnamedblk2__DOT__i = 0U;
@@ -632,6 +639,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2055__unnamedblk2__DOT__i);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__opcode = 0x10U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i = 0;
             {
                 if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                      == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__opcode))) {
@@ -639,14 +647,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i)) 
                            && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__opcode) 
                                      >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i))));
-                    if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i)))) {
+                    if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__unnamedblk1__DOT__i);
@@ -654,50 +662,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2057__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2057__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2059__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2059__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2061__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2061__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2063__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2063__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2065__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2065__wdata[0U] 
@@ -715,11 +723,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2065__wdata[4U] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                     [4U];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2065__unnamedblk2__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2065__unnamedblk2__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2065__unnamedblk2__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          89);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2065__unnamedblk2__DOT__i)) 
@@ -731,12 +740,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2065__unnamedblk2__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2065__unnamedblk2__DOT__i);
@@ -744,26 +753,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2069__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2069__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2071__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2071__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2056__opcode;
@@ -772,38 +781,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2074__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2074__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2076__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2076__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2078__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2078__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2080__tms_last = 1U;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2080__wdata[0U] 
@@ -902,11 +911,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2080__wdata[0x1fU] 
                 = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data
                 [0x1fU];
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2080__unnamedblk3__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2080__unnamedblk3__DOT__i = 0U;
             while (VL_GTS_III(32, 0x20U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2080__unnamedblk3__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      98);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2080__wdata
@@ -917,12 +927,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2080__unnamedblk3__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2080__unnamedblk3__DOT__i);
@@ -932,64 +942,70 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2085__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2085__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2087__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2087__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2089__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2089__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__wait_cycles 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__wait_cycles;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__address 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__address;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i = 0;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i = 0;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk8__DOT__i = 0;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__data_out = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__data_out = 0ULL;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__write_data_packed = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__write_data_packed 
             = (1ULL | ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__address)))) 
                        << 0x22U));
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i)) {
-            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0 
+            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i)) 
                    && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__write_data_packed 
                                      >> (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i)))));
-            if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i)))) {
+            if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i))))) {
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i)] 
-                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0;
+                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0;
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk6__DOT__i);
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__opcode = 0x11U;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i = 0;
         {
             if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                  == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__opcode))) {
@@ -997,14 +1013,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i = 0U;
             while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                     = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i)) 
                        && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__opcode) 
                                  >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i))));
-                if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i)))) {
+                if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__unnamedblk1__DOT__i);
@@ -1012,50 +1028,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2093__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2093__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2095__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2095__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2097__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2097__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2099__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2099__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2101__tms_last = 1U;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2101__wdata[0U] 
@@ -1073,11 +1089,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2101__wdata[4U] 
                 = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                 [4U];
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2101__unnamedblk2__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2101__unnamedblk2__DOT__i = 0U;
             while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2101__unnamedblk2__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      89);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2101__unnamedblk2__DOT__i)) 
@@ -1089,12 +1106,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2101__unnamedblk2__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2101__unnamedblk2__DOT__i);
@@ -1102,26 +1119,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2105__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2105__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2107__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2107__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2092__opcode;
@@ -1130,35 +1147,35 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2110__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2110__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2112__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2112__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2114__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2114__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2116__tms_last = 1U;
         IData/*31:0*/ __Vilp1;
@@ -1169,11 +1186,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 [__Vilp1];
             __Vilp1 = ((IData)(1U) + __Vilp1);
         }
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2116__unnamedblk4__DOT__i = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2116__unnamedblk4__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2116__unnamedblk4__DOT__i)) {
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  107);
             vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2116__unnamedblk4__DOT__i)) 
@@ -1185,12 +1203,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             }
             co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  153);
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2116__unnamedblk4__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2116__unnamedblk4__DOT__i);
@@ -1200,51 +1218,52 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2121__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2121__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2123__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2123__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2125__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2125__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2127__cycles 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__wait_cycles;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2127__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2127__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2127__cycles;
         while (VL_LTS_III(32, 0U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2127__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2)) {
             co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  153);
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2127__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                 = (__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2127__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
@@ -1253,49 +1272,49 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2132__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2132__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2134__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2134__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2136__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2136__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__write_data_packed 
             = ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__address)))) 
                << 0x22U);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i)) {
-            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0 
+            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i)) 
                    && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__write_data_packed 
                                      >> (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i)))));
-            if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i)))) {
+            if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i))))) {
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i)] 
-                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0;
+                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0;
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk7__DOT__i);
@@ -1309,11 +1328,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 [__Vilp2];
             __Vilp2 = ((IData)(1U) + __Vilp2);
         }
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__unnamedblk6__DOT__i = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__unnamedblk6__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__unnamedblk6__DOT__i)) {
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  129);
             vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__unnamedblk6__DOT__i)) 
@@ -1325,19 +1345,19 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             }
             co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  153);
-            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0 
+            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0 
                 = vlSelfRef.tb_croc_soc__DOT__jtag_tdo_o;
-            if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__unnamedblk6__DOT__i)))) {
+            if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__unnamedblk6__DOT__i))))) {
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__rdata[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__unnamedblk6__DOT__i)] 
-                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0;
+                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0;
             }
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__unnamedblk6__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2138__unnamedblk6__DOT__i);
@@ -1355,49 +1375,49 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2142__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2142__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2144__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2144__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2146__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2146__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk8__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk8__DOT__i)) {
-            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0 
+            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk8__DOT__i)) 
                    && vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__read_data
                    [(0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk8__DOT__i)]);
-            if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk8__DOT__i)))) {
+            if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk8__DOT__i))))) {
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__data_out 
                     = (((~ (1ULL << (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk8__DOT__i))) 
                         & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__data_out) 
-                       | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0)) 
+                       | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0)) 
                                               << (0x3fU 
                                                   & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2091__unnamedblk8__DOT__i))));
             }
@@ -1422,6 +1442,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset = 0x10000U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2149__data 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2149__unnamedblk2__DOT__i = 0;
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data_packed 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2149__data;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2149__unnamedblk2__DOT__i = 0U;
@@ -1434,6 +1455,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2149__unnamedblk2__DOT__i);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__opcode = 0x10U;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i = 0;
                 {
                     if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                          == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__opcode))) {
@@ -1441,14 +1463,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i)) {
-                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i)) 
                                && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__opcode) 
                                          >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i))));
-                        if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i)))) {
+                        if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i))))) {
                             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i)] 
-                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                         }
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__unnamedblk1__DOT__i);
@@ -1456,50 +1478,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2151__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2151__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2153__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2153__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2155__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2155__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2157__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2157__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2159__tms_last = 1U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2159__wdata[0U] 
@@ -1517,11 +1539,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2159__wdata[4U] 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                         [4U];
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2159__unnamedblk2__DOT__i = 0;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2159__unnamedblk2__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2159__unnamedblk2__DOT__i)) {
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              89);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2159__unnamedblk2__DOT__i)) 
@@ -1533,12 +1556,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         }
                         co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              153);
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2159__unnamedblk2__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2159__unnamedblk2__DOT__i);
@@ -1546,26 +1569,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2163__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2163__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2165__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2165__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2150__opcode;
@@ -1574,38 +1597,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2168__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2168__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2170__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2170__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2172__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2172__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2174__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2174__wdata[0U] 
@@ -1704,11 +1727,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2174__wdata[0x1fU] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data
                     [0x1fU];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2174__unnamedblk3__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2174__unnamedblk3__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x20U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2174__unnamedblk3__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          98);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2174__wdata
@@ -1719,12 +1743,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2174__unnamedblk3__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2174__unnamedblk3__DOT__i);
@@ -1734,65 +1758,71 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2179__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2179__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2181__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2181__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2183__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2183__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__wait_cycles 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__wait_cycles;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__address 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__address;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk8__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__data_out = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__data_out = 0ULL;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__write_data_packed = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__write_data_packed 
                 = (1ULL | ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__address)))) 
                            << 0x22U));
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i)) 
                        && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__write_data_packed 
                                          >> (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i)))));
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk6__DOT__i);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__opcode = 0x11U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i = 0;
             {
                 if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                      == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__opcode))) {
@@ -1800,14 +1830,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i)) 
                            && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__opcode) 
                                      >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i))));
-                    if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i)))) {
+                    if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__unnamedblk1__DOT__i);
@@ -1815,50 +1845,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2187__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2187__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2189__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2189__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2191__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2191__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2193__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2193__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2195__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2195__wdata[0U] 
@@ -1876,11 +1906,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2195__wdata[4U] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                     [4U];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2195__unnamedblk2__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2195__unnamedblk2__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2195__unnamedblk2__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          89);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2195__unnamedblk2__DOT__i)) 
@@ -1892,12 +1923,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2195__unnamedblk2__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2195__unnamedblk2__DOT__i);
@@ -1905,26 +1936,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2199__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2199__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2201__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2201__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2186__opcode;
@@ -1933,38 +1964,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2204__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2204__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2206__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2206__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2208__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2208__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2210__tms_last = 1U;
             IData/*31:0*/ __Vilp4;
@@ -1975,11 +2006,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     [__Vilp4];
                 __Vilp4 = ((IData)(1U) + __Vilp4);
             }
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2210__unnamedblk4__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2210__unnamedblk4__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2210__unnamedblk4__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      107);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2210__unnamedblk4__DOT__i)) 
@@ -1991,12 +2023,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2210__unnamedblk4__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2210__unnamedblk4__DOT__i);
@@ -2006,53 +2038,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2215__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2215__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2217__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2217__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2219__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2219__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2221__cycles 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__wait_cycles;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2221__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2221__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2221__cycles;
             while (VL_LTS_III(32, 0U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2221__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2)) {
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2221__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                     = (__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2221__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
@@ -2061,53 +2094,53 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2226__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2226__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2228__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2228__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2230__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2230__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__write_data_packed 
                 = ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__address)))) 
                    << 0x22U);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i)) 
                        && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__write_data_packed 
                                          >> (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i)))));
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk7__DOT__i);
@@ -2121,11 +2154,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     [__Vilp5];
                 __Vilp5 = ((IData)(1U) + __Vilp5);
             }
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__unnamedblk6__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__unnamedblk6__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__unnamedblk6__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      129);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__unnamedblk6__DOT__i)) 
@@ -2137,19 +2171,19 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_tdo_o;
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__unnamedblk6__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__unnamedblk6__DOT__i))))) {
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__rdata[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__unnamedblk6__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0;
                 }
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__unnamedblk6__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2232__unnamedblk6__DOT__i);
@@ -2167,51 +2201,51 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2236__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2236__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2238__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2238__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2240__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2240__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk8__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk8__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk8__DOT__i)) 
                        && vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__read_data
                        [(0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk8__DOT__i)]);
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk8__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk8__DOT__i))))) {
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__data_out 
                         = (((~ (1ULL << (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk8__DOT__i))) 
                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__data_out) 
-                           | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0)) 
+                           | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0)) 
                                                   << 
                                                   (0x3fU 
                                                    & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2185__unnamedblk8__DOT__i))));
@@ -2233,25 +2267,31 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__trial_idx 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__trial_idx);
         }
-        __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs 
+        vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2053__data;
-        if (VL_UNLIKELY((0U != (7U & (__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs 
-                                      >> 8U))))) {
+        if (VL_UNLIKELY(((0U != (7U & (vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs 
+                                       >> 8U)))))) {
             VL_WRITEF_NX("[%0t] %%Fatal: tb_croc_soc.sv:135: Assertion failed in %Ntb_croc_soc.jtag_write.unnamedblk1: [JTAG] Abstract command error!\n",0,
                          64,VL_TIME_UNITED_Q(1),-12,
                          vlSymsp->name());
             Verilated::runFlushCallbacks();
-            VL_STOP_MT("/scratch/vlsi2_12fs25/croc/rtl/tb_croc_soc.sv", 135, "", false);
+            VL_STOP_MT("/scratch/vlsi2_12fs25/croc_drc/rtl/tb_croc_soc.sv", 135, "", false);
         }
-        while ((0x1000U & __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs)) {
+        while ((0x1000U & vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs)) {
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__address = 0x16U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__data_out = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__data_out = 0ULL;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__op = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__op = 0U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__trial_idx = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__trial_idx = 0U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__wait_cycles = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__wait_cycles = 8U;
             if ((0U != __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__trial_idx)) {
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset = 0x10000U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2244__data 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2244__unnamedblk2__DOT__i = 0;
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data_packed 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2244__data;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2244__unnamedblk2__DOT__i = 0U;
@@ -2264,6 +2304,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2244__unnamedblk2__DOT__i);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__opcode = 0x10U;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i = 0;
                 {
                     if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                          == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__opcode))) {
@@ -2271,14 +2312,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i)) {
-                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i)) 
                                && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__opcode) 
                                          >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i))));
-                        if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i)))) {
+                        if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i))))) {
                             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i)] 
-                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                         }
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__unnamedblk1__DOT__i);
@@ -2286,50 +2327,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2246__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2246__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2248__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2248__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2250__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2250__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2252__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2252__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2254__tms_last = 1U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2254__wdata[0U] 
@@ -2347,11 +2388,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2254__wdata[4U] 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                         [4U];
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2254__unnamedblk2__DOT__i = 0;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2254__unnamedblk2__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2254__unnamedblk2__DOT__i)) {
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              89);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2254__unnamedblk2__DOT__i)) 
@@ -2363,12 +2405,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         }
                         co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              153);
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2254__unnamedblk2__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2254__unnamedblk2__DOT__i);
@@ -2376,26 +2418,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2258__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2258__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2260__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2260__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2245__opcode;
@@ -2404,38 +2446,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2263__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2263__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2265__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2265__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2267__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2267__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2269__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2269__wdata[0U] 
@@ -2534,11 +2576,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2269__wdata[0x1fU] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data
                     [0x1fU];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2269__unnamedblk3__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2269__unnamedblk3__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x20U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2269__unnamedblk3__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          98);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2269__wdata
@@ -2549,12 +2592,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2269__unnamedblk3__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2269__unnamedblk3__DOT__i);
@@ -2564,65 +2607,71 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2274__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2274__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2276__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2276__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2278__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2278__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__wait_cycles 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__wait_cycles;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__address 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__address;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk8__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__data_out = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__data_out = 0ULL;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__write_data_packed = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__write_data_packed 
                 = (1ULL | ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__address)))) 
                            << 0x22U));
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i)) 
                        && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__write_data_packed 
                                          >> (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i)))));
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk6__DOT__i);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__opcode = 0x11U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i = 0;
             {
                 if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                      == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__opcode))) {
@@ -2630,14 +2679,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i)) 
                            && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__opcode) 
                                      >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i))));
-                    if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i)))) {
+                    if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__unnamedblk1__DOT__i);
@@ -2645,50 +2694,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2282__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2282__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2284__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2284__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2286__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2286__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2288__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2288__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2290__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2290__wdata[0U] 
@@ -2706,11 +2755,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2290__wdata[4U] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                     [4U];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2290__unnamedblk2__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2290__unnamedblk2__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2290__unnamedblk2__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          89);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2290__unnamedblk2__DOT__i)) 
@@ -2722,12 +2772,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2290__unnamedblk2__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2290__unnamedblk2__DOT__i);
@@ -2735,26 +2785,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2294__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2294__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2296__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2296__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2281__opcode;
@@ -2763,38 +2813,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2299__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2299__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2301__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2301__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2303__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2303__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2305__tms_last = 1U;
             IData/*31:0*/ __Vilp7;
@@ -2805,11 +2855,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     [__Vilp7];
                 __Vilp7 = ((IData)(1U) + __Vilp7);
             }
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2305__unnamedblk4__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2305__unnamedblk4__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2305__unnamedblk4__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      107);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2305__unnamedblk4__DOT__i)) 
@@ -2821,12 +2872,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2305__unnamedblk4__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2305__unnamedblk4__DOT__i);
@@ -2836,53 +2887,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2310__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2310__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2312__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2312__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2314__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2314__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2316__cycles 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__wait_cycles;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2316__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2316__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2316__cycles;
             while (VL_LTS_III(32, 0U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2316__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2)) {
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2316__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                     = (__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2316__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
@@ -2891,53 +2943,53 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2321__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2321__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2323__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2323__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2325__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2325__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__write_data_packed 
                 = ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__address)))) 
                    << 0x22U);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i)) 
                        && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__write_data_packed 
                                          >> (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i)))));
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk7__DOT__i);
@@ -2951,11 +3003,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     [__Vilp8];
                 __Vilp8 = ((IData)(1U) + __Vilp8);
             }
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__unnamedblk6__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__unnamedblk6__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__unnamedblk6__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      129);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__unnamedblk6__DOT__i)) 
@@ -2967,19 +3020,19 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_tdo_o;
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__unnamedblk6__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__unnamedblk6__DOT__i))))) {
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__rdata[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__unnamedblk6__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0;
                 }
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__unnamedblk6__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2327__unnamedblk6__DOT__i);
@@ -2997,51 +3050,51 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2331__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2331__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2333__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2333__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2335__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2335__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk8__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk8__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk8__DOT__i)) 
                        && vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__read_data
                        [(0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk8__DOT__i)]);
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk8__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk8__DOT__i))))) {
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__data_out 
                         = (((~ (1ULL << (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk8__DOT__i))) 
                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__data_out) 
-                           | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0)) 
+                           | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0)) 
                                                   << 
                                                   (0x3fU 
                                                    & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2280__unnamedblk8__DOT__i))));
@@ -3067,6 +3120,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset = 0x10000U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2338__data 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset;
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2338__unnamedblk2__DOT__i = 0;
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data_packed 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2338__data;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2338__unnamedblk2__DOT__i = 0U;
@@ -3079,6 +3133,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2338__unnamedblk2__DOT__i);
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__opcode = 0x10U;
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i = 0;
                     {
                         if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                              == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__opcode))) {
@@ -3086,16 +3141,16 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         }
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i = 0U;
                         while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i)) {
-                            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                                 = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i)) 
                                    && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__opcode) 
                                              >> (7U 
                                                  & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i))));
-                            if (VL_LIKELY((4U >= (7U 
-                                                  & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i)))) {
+                            if (VL_LIKELY(((4U >= (7U 
+                                                   & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i))))) {
                                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i)] 
-                                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                             }
                             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i 
                                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__unnamedblk1__DOT__i);
@@ -3103,50 +3158,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2340__tms_val = 1U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2340__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2342__tms_val = 1U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2342__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2344__tms_val = 0U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2344__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2346__tms_val = 0U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2346__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2348__tms_last = 1U;
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2348__wdata[0U] 
@@ -3164,11 +3219,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2348__wdata[4U] 
                             = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                             [4U];
+                        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2348__unnamedblk2__DOT__i = 0;
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2348__unnamedblk2__DOT__i = 0U;
                         while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2348__unnamedblk2__DOT__i)) {
                             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                                  nullptr, 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  89);
                             vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                                 = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2348__unnamedblk2__DOT__i)) 
@@ -3180,12 +3236,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                             }
                             co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                                  nullptr, 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  153);
-                            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                                 nullptr, 
                                                                                 "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                                "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                                "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                                 157);
                             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2348__unnamedblk2__DOT__i 
                                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2348__unnamedblk2__DOT__i);
@@ -3193,26 +3249,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2352__tms_val = 1U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2352__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2354__tms_val = 0U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2354__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2339__opcode;
@@ -3221,38 +3277,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2357__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2357__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2359__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2359__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2361__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2361__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2363__tms_last = 1U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2363__wdata[0U] 
@@ -3351,11 +3407,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2363__wdata[0x1fU] 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data
                         [0x1fU];
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2363__unnamedblk3__DOT__i = 0;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2363__unnamedblk3__DOT__i = 0U;
                     while (VL_GTS_III(32, 0x20U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2363__unnamedblk3__DOT__i)) {
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              98);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2363__wdata
@@ -3366,12 +3423,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         }
                         co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              153);
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2363__unnamedblk3__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2363__unnamedblk3__DOT__i);
@@ -3381,67 +3438,73 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2368__tms_val = 1U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2368__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2370__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2370__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2372__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2372__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__wait_cycles 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__wait_cycles;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__address 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__address;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i = 0;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i = 0;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i = 0;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__data_out = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__data_out = 0ULL;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__write_data_packed = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__write_data_packed 
                     = (1ULL | ((QData)((IData)((0x7fU 
                                                 & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__address)))) 
                                << 0x22U));
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i)) 
                            && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__write_data_packed 
                                              >> (0x3fU 
                                                  & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i)))));
-                    if (VL_LIKELY((0x28U >= (0x3fU 
-                                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i)))) {
+                    if (VL_LIKELY(((0x28U >= (0x3fU 
+                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk6__DOT__i);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__opcode = 0x11U;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i = 0;
                 {
                     if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                          == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__opcode))) {
@@ -3449,14 +3512,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i)) {
-                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i)) 
                                && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__opcode) 
                                          >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i))));
-                        if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i)))) {
+                        if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i))))) {
                             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i)] 
-                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                         }
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__unnamedblk1__DOT__i);
@@ -3464,50 +3527,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2376__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2376__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2378__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2378__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2380__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2380__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2382__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2382__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2384__tms_last = 1U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2384__wdata[0U] 
@@ -3525,11 +3588,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2384__wdata[4U] 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                         [4U];
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2384__unnamedblk2__DOT__i = 0;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2384__unnamedblk2__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2384__unnamedblk2__DOT__i)) {
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              89);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2384__unnamedblk2__DOT__i)) 
@@ -3541,12 +3605,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         }
                         co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              153);
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2384__unnamedblk2__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2384__unnamedblk2__DOT__i);
@@ -3554,26 +3618,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2388__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2388__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2390__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2390__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2375__opcode;
@@ -3582,38 +3646,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2393__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2393__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2395__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2395__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2397__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2397__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2399__tms_last = 1U;
                 IData/*31:0*/ __Vilp10;
@@ -3624,11 +3688,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         [__Vilp10];
                     __Vilp10 = ((IData)(1U) + __Vilp10);
                 }
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2399__unnamedblk4__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2399__unnamedblk4__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2399__unnamedblk4__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          107);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2399__unnamedblk4__DOT__i)) 
@@ -3640,12 +3705,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2399__unnamedblk4__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2399__unnamedblk4__DOT__i);
@@ -3655,53 +3720,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2404__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2404__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2406__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2406__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2408__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2408__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2410__cycles 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__wait_cycles;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2410__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2410__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2410__cycles;
                 while (VL_LTS_III(32, 0U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2410__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2)) {
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2410__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                         = (__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2410__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
@@ -3710,54 +3776,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2415__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2415__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2417__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2417__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2419__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2419__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__write_data_packed 
                     = ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__address)))) 
                        << 0x22U);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i)) 
                            && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__write_data_packed 
                                              >> (0x3fU 
                                                  & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i)))));
-                    if (VL_LIKELY((0x28U >= (0x3fU 
-                                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i)))) {
+                    if (VL_LIKELY(((0x28U >= (0x3fU 
+                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk7__DOT__i);
@@ -3771,11 +3837,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                         [__Vilp11];
                     __Vilp11 = ((IData)(1U) + __Vilp11);
                 }
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__unnamedblk6__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__unnamedblk6__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__unnamedblk6__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          129);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__unnamedblk6__DOT__i)) 
@@ -3787,20 +3854,20 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_tdo_o;
-                    if (VL_LIKELY((0x28U >= (0x3fU 
-                                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__unnamedblk6__DOT__i)))) {
+                    if (VL_LIKELY(((0x28U >= (0x3fU 
+                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__unnamedblk6__DOT__i))))) {
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__rdata[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__unnamedblk6__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0;
                     }
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__unnamedblk6__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2421__unnamedblk6__DOT__i);
@@ -3818,54 +3885,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2425__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2425__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2427__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2427__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2429__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2429__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i)) 
                            && vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__read_data
                            [(0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i)]);
-                    if (VL_LIKELY((0x28U >= (0x3fU 
-                                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i)))) {
+                    if (VL_LIKELY(((0x28U >= (0x3fU 
+                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i))))) {
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__data_out 
                             = (((~ (1ULL << (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i))) 
                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__data_out) 
                                | (0x1ffffffffffULL 
-                                  & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0)) 
+                                  & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0)) 
                                      << (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i))));
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2374__unnamedblk8__DOT__i 
@@ -3885,32 +3952,31 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__4(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__trial_idx 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__trial_idx);
             }
-            __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs 
+            vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2242__data;
-            if (VL_UNLIKELY((0U != (7U & (__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs 
-                                          >> 8U))))) {
+            if (VL_UNLIKELY(((0U != (7U & (vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk1__DOT__acs 
+                                           >> 8U)))))) {
                 VL_WRITEF_NX("[%0t] %%Fatal: tb_croc_soc.sv:135: Assertion failed in %Ntb_croc_soc.jtag_write.unnamedblk1: [JTAG] Abstract command error!\n",0,
                              64,VL_TIME_UNITED_Q(1),
                              -12,vlSymsp->name());
                 Verilated::runFlushCallbacks();
-                VL_STOP_MT("/scratch/vlsi2_12fs25/croc/rtl/tb_croc_soc.sv", 135, "", false);
+                VL_STOP_MT("/scratch/vlsi2_12fs25/croc_drc/rtl/tb_croc_soc.sv", 135, "", false);
             }
         }
     }
 }
 
 VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_soc___024root* vlSelf) {
-    (void)vlSelf;  // Prevent unused variable warning
-    Vtb_croc_soc__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5\n"); );
+    Vtb_croc_soc__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
-    IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs;
-    __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs = 0;
     CData/*7:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__address;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__address = 0;
     IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__data;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__data = 0;
+    QData/*40:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__data_out;
+    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__data_out = 0;
     CData/*1:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__op;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__op = 0;
     IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__trial_idx;
@@ -4209,6 +4275,8 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__address = 0;
     IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__data;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__data = 0;
+    QData/*40:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__data_out;
+    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__data_out = 0;
     CData/*1:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__op;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__op = 0;
     IData/*31:0*/ __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__trial_idx;
@@ -4564,13 +4632,19 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
     // Body
     if (vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__wait_sba) {
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__address = 0x38U;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__data_out = 0;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__data_out = 0ULL;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__op = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__op = 0U;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__trial_idx = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__trial_idx = 0U;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__wait_cycles = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__wait_cycles = 8U;
         if ((0U != __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__trial_idx)) {
             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset = 0x10000U;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2433__data 
                 = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2433__unnamedblk2__DOT__i = 0;
             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data_packed 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2433__data;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2433__unnamedblk2__DOT__i = 0U;
@@ -4583,6 +4657,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2433__unnamedblk2__DOT__i);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__opcode = 0x10U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i = 0;
             {
                 if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                      == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__opcode))) {
@@ -4590,14 +4665,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i)) 
                            && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__opcode) 
                                      >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i))));
-                    if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i)))) {
+                    if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__unnamedblk1__DOT__i);
@@ -4605,50 +4680,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2435__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2435__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2437__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2437__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2439__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2439__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2441__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2441__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2443__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2443__wdata[0U] 
@@ -4666,11 +4741,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2443__wdata[4U] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                     [4U];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2443__unnamedblk2__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2443__unnamedblk2__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2443__unnamedblk2__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          89);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2443__unnamedblk2__DOT__i)) 
@@ -4682,12 +4758,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2443__unnamedblk2__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2443__unnamedblk2__DOT__i);
@@ -4695,26 +4771,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2447__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2447__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2449__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2449__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2434__opcode;
@@ -4723,38 +4799,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2452__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2452__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2454__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2454__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2456__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2456__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2458__tms_last = 1U;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2458__wdata[0U] 
@@ -4853,11 +4929,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2458__wdata[0x1fU] 
                 = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data
                 [0x1fU];
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2458__unnamedblk3__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2458__unnamedblk3__DOT__i = 0U;
             while (VL_GTS_III(32, 0x20U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2458__unnamedblk3__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      98);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2458__wdata
@@ -4868,12 +4945,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2458__unnamedblk3__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2458__unnamedblk3__DOT__i);
@@ -4883,64 +4960,70 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2463__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2463__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2465__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2465__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2467__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2467__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__wait_cycles 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__wait_cycles;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__address 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__address;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i = 0;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i = 0;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk8__DOT__i = 0;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__data_out = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__data_out = 0ULL;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__write_data_packed = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__write_data_packed 
             = (1ULL | ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__address)))) 
                        << 0x22U));
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i)) {
-            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0 
+            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i)) 
                    && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__write_data_packed 
                                      >> (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i)))));
-            if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i)))) {
+            if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i))))) {
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i)] 
-                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0;
+                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0;
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk6__DOT__i);
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__opcode = 0x11U;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i = 0;
         {
             if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                  == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__opcode))) {
@@ -4948,14 +5031,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i = 0U;
             while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                     = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i)) 
                        && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__opcode) 
                                  >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i))));
-                if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i)))) {
+                if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__unnamedblk1__DOT__i);
@@ -4963,50 +5046,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2471__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2471__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2473__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2473__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2475__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2475__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2477__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2477__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2479__tms_last = 1U;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2479__wdata[0U] 
@@ -5024,11 +5107,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2479__wdata[4U] 
                 = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                 [4U];
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2479__unnamedblk2__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2479__unnamedblk2__DOT__i = 0U;
             while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2479__unnamedblk2__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      89);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2479__unnamedblk2__DOT__i)) 
@@ -5040,12 +5124,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2479__unnamedblk2__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2479__unnamedblk2__DOT__i);
@@ -5053,26 +5137,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2483__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2483__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2485__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2485__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2470__opcode;
@@ -5081,35 +5165,35 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2488__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2488__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2490__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2490__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2492__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2492__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2494__tms_last = 1U;
         IData/*31:0*/ __Vilp1;
@@ -5120,11 +5204,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 [__Vilp1];
             __Vilp1 = ((IData)(1U) + __Vilp1);
         }
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2494__unnamedblk4__DOT__i = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2494__unnamedblk4__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2494__unnamedblk4__DOT__i)) {
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  107);
             vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2494__unnamedblk4__DOT__i)) 
@@ -5136,12 +5221,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             }
             co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  153);
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2494__unnamedblk4__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2494__unnamedblk4__DOT__i);
@@ -5151,51 +5236,52 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2499__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2499__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2501__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2501__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2503__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2503__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2505__cycles 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__wait_cycles;
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2505__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2505__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2505__cycles;
         while (VL_LTS_III(32, 0U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2505__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2)) {
             co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  153);
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2505__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                 = (__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2505__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
@@ -5204,49 +5290,49 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2510__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2510__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2512__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2512__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2514__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2514__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__write_data_packed 
             = ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__address)))) 
                << 0x22U);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i)) {
-            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0 
+            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i)) 
                    && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__write_data_packed 
                                      >> (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i)))));
-            if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i)))) {
+            if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i))))) {
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i)] 
-                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0;
+                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0;
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk7__DOT__i);
@@ -5260,11 +5346,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 [__Vilp2];
             __Vilp2 = ((IData)(1U) + __Vilp2);
         }
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__unnamedblk6__DOT__i = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__unnamedblk6__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__unnamedblk6__DOT__i)) {
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  129);
             vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__unnamedblk6__DOT__i)) 
@@ -5276,19 +5363,19 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             }
             co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  153);
-            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0 
+            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0 
                 = vlSelfRef.tb_croc_soc__DOT__jtag_tdo_o;
-            if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__unnamedblk6__DOT__i)))) {
+            if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__unnamedblk6__DOT__i))))) {
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__rdata[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__unnamedblk6__DOT__i)] 
-                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0;
+                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0;
             }
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__unnamedblk6__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2516__unnamedblk6__DOT__i);
@@ -5306,49 +5393,49 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2520__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2520__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2522__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2522__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2524__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2524__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk8__DOT__i = 0U;
         while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk8__DOT__i)) {
-            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0 
+            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0 
                 = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk8__DOT__i)) 
                    && vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__read_data
                    [(0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk8__DOT__i)]);
-            if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk8__DOT__i)))) {
+            if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk8__DOT__i))))) {
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__data_out 
                     = (((~ (1ULL << (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk8__DOT__i))) 
                         & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__data_out) 
-                       | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0)) 
+                       | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0)) 
                                               << (0x3fU 
                                                   & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2469__unnamedblk8__DOT__i))));
             }
@@ -5373,6 +5460,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset = 0x10000U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2527__data 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2527__unnamedblk2__DOT__i = 0;
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data_packed 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2527__data;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2527__unnamedblk2__DOT__i = 0U;
@@ -5385,6 +5473,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2527__unnamedblk2__DOT__i);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__opcode = 0x10U;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i = 0;
                 {
                     if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                          == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__opcode))) {
@@ -5392,14 +5481,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i)) {
-                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i)) 
                                && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__opcode) 
                                          >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i))));
-                        if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i)))) {
+                        if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i))))) {
                             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i)] 
-                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                         }
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__unnamedblk1__DOT__i);
@@ -5407,50 +5496,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2529__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2529__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2531__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2531__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2533__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2533__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2535__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2535__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2537__tms_last = 1U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2537__wdata[0U] 
@@ -5468,11 +5557,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2537__wdata[4U] 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                         [4U];
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2537__unnamedblk2__DOT__i = 0;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2537__unnamedblk2__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2537__unnamedblk2__DOT__i)) {
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              89);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2537__unnamedblk2__DOT__i)) 
@@ -5484,12 +5574,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         }
                         co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              153);
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2537__unnamedblk2__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2537__unnamedblk2__DOT__i);
@@ -5497,26 +5587,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2541__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2541__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2543__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2543__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2528__opcode;
@@ -5525,38 +5615,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2546__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2546__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2548__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2548__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2550__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2550__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2552__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2552__wdata[0U] 
@@ -5655,11 +5745,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2552__wdata[0x1fU] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data
                     [0x1fU];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2552__unnamedblk3__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2552__unnamedblk3__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x20U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2552__unnamedblk3__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          98);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2552__wdata
@@ -5670,12 +5761,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2552__unnamedblk3__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2552__unnamedblk3__DOT__i);
@@ -5685,65 +5776,71 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2557__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2557__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2559__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2559__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2561__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2561__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__wait_cycles 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__wait_cycles;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__address 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__address;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk8__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__data_out = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__data_out = 0ULL;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__write_data_packed = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__write_data_packed 
                 = (1ULL | ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__address)))) 
                            << 0x22U));
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i)) 
                        && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__write_data_packed 
                                          >> (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i)))));
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk6__DOT__i);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__opcode = 0x11U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i = 0;
             {
                 if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                      == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__opcode))) {
@@ -5751,14 +5848,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i)) 
                            && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__opcode) 
                                      >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i))));
-                    if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i)))) {
+                    if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__unnamedblk1__DOT__i);
@@ -5766,50 +5863,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2565__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2565__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2567__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2567__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2569__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2569__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2571__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2571__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2573__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2573__wdata[0U] 
@@ -5827,11 +5924,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2573__wdata[4U] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                     [4U];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2573__unnamedblk2__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2573__unnamedblk2__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2573__unnamedblk2__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          89);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2573__unnamedblk2__DOT__i)) 
@@ -5843,12 +5941,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2573__unnamedblk2__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2573__unnamedblk2__DOT__i);
@@ -5856,26 +5954,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2577__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2577__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2579__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2579__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2564__opcode;
@@ -5884,38 +5982,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2582__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2582__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2584__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2584__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2586__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2586__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2588__tms_last = 1U;
             IData/*31:0*/ __Vilp4;
@@ -5926,11 +6024,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     [__Vilp4];
                 __Vilp4 = ((IData)(1U) + __Vilp4);
             }
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2588__unnamedblk4__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2588__unnamedblk4__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2588__unnamedblk4__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      107);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2588__unnamedblk4__DOT__i)) 
@@ -5942,12 +6041,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2588__unnamedblk4__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2588__unnamedblk4__DOT__i);
@@ -5957,53 +6056,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2593__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2593__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2595__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2595__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2597__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2597__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2599__cycles 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__wait_cycles;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2599__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2599__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2599__cycles;
             while (VL_LTS_III(32, 0U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2599__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2)) {
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2599__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                     = (__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2599__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
@@ -6012,53 +6112,53 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2604__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2604__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2606__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2606__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2608__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2608__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__write_data_packed 
                 = ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__address)))) 
                    << 0x22U);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i)) 
                        && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__write_data_packed 
                                          >> (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i)))));
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk7__DOT__i);
@@ -6072,11 +6172,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     [__Vilp5];
                 __Vilp5 = ((IData)(1U) + __Vilp5);
             }
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__unnamedblk6__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__unnamedblk6__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__unnamedblk6__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      129);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__unnamedblk6__DOT__i)) 
@@ -6088,19 +6189,19 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_tdo_o;
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__unnamedblk6__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__unnamedblk6__DOT__i))))) {
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__rdata[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__unnamedblk6__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0;
                 }
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__unnamedblk6__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2610__unnamedblk6__DOT__i);
@@ -6118,51 +6219,51 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2614__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2614__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2616__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2616__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2618__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2618__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk8__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk8__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk8__DOT__i)) 
                        && vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__read_data
                        [(0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk8__DOT__i)]);
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk8__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk8__DOT__i))))) {
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__data_out 
                         = (((~ (1ULL << (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk8__DOT__i))) 
                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__data_out) 
-                           | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0)) 
+                           | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0)) 
                                                   << 
                                                   (0x3fU 
                                                    & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2563__unnamedblk8__DOT__i))));
@@ -6184,27 +6285,33 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__trial_idx 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__trial_idx);
         }
-        __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
+        vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2431__data;
-        if (VL_UNLIKELY((0U != (7U & ((__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
-                                       >> 0xcU) | (1U 
-                                                   & (__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
-                                                      >> 0x16U))))))) {
+        if (VL_UNLIKELY(((0U != (7U & ((vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
+                                        >> 0xcU) | 
+                                       (1U & (vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
+                                              >> 0x16U)))))))) {
             VL_WRITEF_NX("[%0t] %%Fatal: tb_croc_soc.sv:142: Assertion failed in %Ntb_croc_soc.jtag_write.unnamedblk2: [JTAG] System bus error!\n",0,
                          64,VL_TIME_UNITED_Q(1),-12,
                          vlSymsp->name());
             Verilated::runFlushCallbacks();
-            VL_STOP_MT("/scratch/vlsi2_12fs25/croc/rtl/tb_croc_soc.sv", 142, "", false);
+            VL_STOP_MT("/scratch/vlsi2_12fs25/croc_drc/rtl/tb_croc_soc.sv", 142, "", false);
         }
-        while ((0x200000U & __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs)) {
+        while ((0x200000U & vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs)) {
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__address = 0x38U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__data_out = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__data_out = 0ULL;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__op = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__op = 0U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__trial_idx = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__trial_idx = 0U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__wait_cycles = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__wait_cycles = 8U;
             if ((0U != __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__trial_idx)) {
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset = 0x10000U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2622__data 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2622__unnamedblk2__DOT__i = 0;
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data_packed 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2622__data;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2622__unnamedblk2__DOT__i = 0U;
@@ -6217,6 +6324,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2622__unnamedblk2__DOT__i);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__opcode = 0x10U;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i = 0;
                 {
                     if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                          == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__opcode))) {
@@ -6224,14 +6332,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i)) {
-                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i)) 
                                && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__opcode) 
                                          >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i))));
-                        if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i)))) {
+                        if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i))))) {
                             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i)] 
-                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                         }
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__unnamedblk1__DOT__i);
@@ -6239,50 +6347,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2624__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2624__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2626__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2626__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2628__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2628__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2630__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2630__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2632__tms_last = 1U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2632__wdata[0U] 
@@ -6300,11 +6408,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2632__wdata[4U] 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                         [4U];
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2632__unnamedblk2__DOT__i = 0;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2632__unnamedblk2__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2632__unnamedblk2__DOT__i)) {
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              89);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2632__unnamedblk2__DOT__i)) 
@@ -6316,12 +6425,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         }
                         co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              153);
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2632__unnamedblk2__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2632__unnamedblk2__DOT__i);
@@ -6329,26 +6438,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2636__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2636__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2638__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2638__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2623__opcode;
@@ -6357,38 +6466,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2641__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2641__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2643__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2643__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2645__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2645__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2647__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2647__wdata[0U] 
@@ -6487,11 +6596,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2647__wdata[0x1fU] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data
                     [0x1fU];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2647__unnamedblk3__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2647__unnamedblk3__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x20U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2647__unnamedblk3__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          98);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2647__wdata
@@ -6502,12 +6612,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2647__unnamedblk3__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2647__unnamedblk3__DOT__i);
@@ -6517,65 +6627,71 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2652__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2652__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2654__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2654__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2656__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2656__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__wait_cycles 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__wait_cycles;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__address 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__address;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk8__DOT__i = 0;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__data_out = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__data_out = 0ULL;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__write_data_packed = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__write_data_packed 
                 = (1ULL | ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__address)))) 
                            << 0x22U));
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i)) 
                        && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__write_data_packed 
                                          >> (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i)))));
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk6__DOT__i);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__opcode = 0x11U;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i = 0;
             {
                 if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                      == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__opcode))) {
@@ -6583,14 +6699,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i)) 
                            && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__opcode) 
                                      >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i))));
-                    if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i)))) {
+                    if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__unnamedblk1__DOT__i);
@@ -6598,50 +6714,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2660__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2660__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2662__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2662__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2664__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2664__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2666__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2666__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2668__tms_last = 1U;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2668__wdata[0U] 
@@ -6659,11 +6775,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2668__wdata[4U] 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                     [4U];
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2668__unnamedblk2__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2668__unnamedblk2__DOT__i = 0U;
                 while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2668__unnamedblk2__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          89);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2668__unnamedblk2__DOT__i)) 
@@ -6675,12 +6792,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2668__unnamedblk2__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2668__unnamedblk2__DOT__i);
@@ -6688,26 +6805,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2672__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2672__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2674__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2674__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2659__opcode;
@@ -6716,38 +6833,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2677__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2677__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2679__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2679__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2681__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2681__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2683__tms_last = 1U;
             IData/*31:0*/ __Vilp7;
@@ -6758,11 +6875,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     [__Vilp7];
                 __Vilp7 = ((IData)(1U) + __Vilp7);
             }
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2683__unnamedblk4__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2683__unnamedblk4__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2683__unnamedblk4__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      107);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2683__unnamedblk4__DOT__i)) 
@@ -6774,12 +6892,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2683__unnamedblk4__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2683__unnamedblk4__DOT__i);
@@ -6789,53 +6907,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2688__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2688__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2690__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2690__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2692__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2692__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2694__cycles 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__wait_cycles;
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2694__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2694__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2694__cycles;
             while (VL_LTS_III(32, 0U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2694__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2)) {
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2694__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                     = (__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2694__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
@@ -6844,53 +6963,53 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2699__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2699__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2701__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2701__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2703__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2703__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__write_data_packed 
                 = ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__address)))) 
                    << 0x22U);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i)) 
                        && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__write_data_packed 
                                          >> (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i)))));
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i))))) {
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0;
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk7__DOT__i);
@@ -6904,11 +7023,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     [__Vilp8];
                 __Vilp8 = ((IData)(1U) + __Vilp8);
             }
+            __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__unnamedblk6__DOT__i = 0;
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__unnamedblk6__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__unnamedblk6__DOT__i)) {
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      129);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__unnamedblk6__DOT__i)) 
@@ -6920,19 +7040,19 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 }
                 co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      153);
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0 
                     = vlSelfRef.tb_croc_soc__DOT__jtag_tdo_o;
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__unnamedblk6__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__unnamedblk6__DOT__i))))) {
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__rdata[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__unnamedblk6__DOT__i)] 
-                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0;
+                        = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0;
                 }
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__unnamedblk6__DOT__i 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2705__unnamedblk6__DOT__i);
@@ -6950,51 +7070,51 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2709__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2709__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2711__tms_val = 1U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2711__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2713__tms_val = 0U;
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  143);
             vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2713__tms_val;
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk8__DOT__i = 0U;
             while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk8__DOT__i)) {
-                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0 
+                vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0 
                     = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk8__DOT__i)) 
                        && vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__read_data
                        [(0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk8__DOT__i)]);
-                if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk8__DOT__i)))) {
+                if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk8__DOT__i))))) {
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__data_out 
                         = (((~ (1ULL << (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk8__DOT__i))) 
                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__data_out) 
-                           | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0)) 
+                           | (0x1ffffffffffULL & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0)) 
                                                   << 
                                                   (0x3fU 
                                                    & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2658__unnamedblk8__DOT__i))));
@@ -7020,6 +7140,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset = 0x10000U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2716__data 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__reset_dmi__Vstatic__dmireset;
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2716__unnamedblk2__DOT__i = 0;
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data_packed 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2716__data;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2716__unnamedblk2__DOT__i = 0U;
@@ -7032,6 +7153,7 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__2716__unnamedblk2__DOT__i);
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__opcode = 0x10U;
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i = 0;
                     {
                         if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                              == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__opcode))) {
@@ -7039,16 +7161,16 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         }
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i = 0U;
                         while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i)) {
-                            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                                 = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i)) 
                                    && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__opcode) 
                                              >> (7U 
                                                  & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i))));
-                            if (VL_LIKELY((4U >= (7U 
-                                                  & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i)))) {
+                            if (VL_LIKELY(((4U >= (7U 
+                                                   & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i))))) {
                                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i)] 
-                                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                             }
                             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i 
                                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__unnamedblk1__DOT__i);
@@ -7056,50 +7178,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2718__tms_val = 1U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2718__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2720__tms_val = 1U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2720__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2722__tms_val = 0U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2722__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2724__tms_val = 0U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2724__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2726__tms_last = 1U;
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2726__wdata[0U] 
@@ -7117,11 +7239,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2726__wdata[4U] 
                             = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                             [4U];
+                        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2726__unnamedblk2__DOT__i = 0;
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2726__unnamedblk2__DOT__i = 0U;
                         while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2726__unnamedblk2__DOT__i)) {
                             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                                  nullptr, 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  89);
                             vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                                 = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2726__unnamedblk2__DOT__i)) 
@@ -7133,12 +7256,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                             }
                             co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                                  nullptr, 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  153);
-                            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                                 nullptr, 
                                                                                 "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                                "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                                "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                                 157);
                             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2726__unnamedblk2__DOT__i 
                                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2726__unnamedblk2__DOT__i);
@@ -7146,26 +7269,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2730__tms_val = 1U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2730__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2732__tms_val = 0U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2732__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2717__opcode;
@@ -7174,38 +7297,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2735__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2735__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2737__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2737__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2739__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2739__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2741__tms_last = 1U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2741__wdata[0U] 
@@ -7304,11 +7427,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2741__wdata[0x1fU] 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dtmcs__Vstatic__write_data
                         [0x1fU];
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2741__unnamedblk3__DOT__i = 0;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2741__unnamedblk3__DOT__i = 0U;
                     while (VL_GTS_III(32, 0x20U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2741__unnamedblk3__DOT__i)) {
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              98);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2741__wdata
@@ -7319,12 +7443,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         }
                         co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              153);
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2741__unnamedblk3__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_32__2741__unnamedblk3__DOT__i);
@@ -7334,67 +7458,73 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2746__tms_val = 1U;
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              143);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2746__tms_val;
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2748__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2748__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2750__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2750__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__wait_cycles 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__wait_cycles;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__address 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__address;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i = 0;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i = 0;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i = 0;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__data_out = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__data_out = 0ULL;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__write_data_packed = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__write_data_packed 
                     = (1ULL | ((QData)((IData)((0x7fU 
                                                 & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__address)))) 
                                << 0x22U));
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i)) 
                            && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__write_data_packed 
                                              >> (0x3fU 
                                                  & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i)))));
-                    if (VL_LIKELY((0x28U >= (0x3fU 
-                                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i)))) {
+                    if (VL_LIKELY(((0x28U >= (0x3fU 
+                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf37b7974__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h26138988__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk6__DOT__i);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__opcode = 0x11U;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i = 0;
                 {
                     if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
                          == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__opcode))) {
@@ -7402,14 +7532,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i)) {
-                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+                        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i)) 
                                && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__opcode) 
                                          >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i))));
-                        if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i)))) {
+                        if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i))))) {
                             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i)] 
-                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
                         }
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__unnamedblk1__DOT__i);
@@ -7417,50 +7547,50 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2754__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2754__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2756__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2756__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2758__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2758__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2760__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2760__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2762__tms_last = 1U;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2762__wdata[0U] 
@@ -7478,11 +7608,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2762__wdata[4U] 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
                         [4U];
+                    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2762__unnamedblk2__DOT__i = 0;
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2762__unnamedblk2__DOT__i = 0U;
                     while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2762__unnamedblk2__DOT__i)) {
                         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              89);
                         vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                             = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2762__unnamedblk2__DOT__i)) 
@@ -7494,12 +7625,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         }
                         co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                              nullptr, 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              153);
-                        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                              nullptr, 
                                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                              157);
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2762__unnamedblk2__DOT__i 
                             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2762__unnamedblk2__DOT__i);
@@ -7507,26 +7638,26 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2766__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2766__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2768__tms_val = 0U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2768__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2753__opcode;
@@ -7535,38 +7666,38 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2771__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2771__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2773__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2773__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2775__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2775__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2777__tms_last = 1U;
                 IData/*31:0*/ __Vilp10;
@@ -7577,11 +7708,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         [__Vilp10];
                     __Vilp10 = ((IData)(1U) + __Vilp10);
                 }
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2777__unnamedblk4__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2777__unnamedblk4__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2777__unnamedblk4__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          107);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2777__unnamedblk4__DOT__i)) 
@@ -7593,12 +7725,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2777__unnamedblk4__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2777__unnamedblk4__DOT__i);
@@ -7608,53 +7740,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2782__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2782__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2784__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2784__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2786__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2786__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2788__cycles 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__wait_cycles;
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2788__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2788__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2788__cycles;
                 while (VL_LTS_III(32, 0U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2788__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2)) {
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2788__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
                         = (__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__wait_idle__2788__tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__unnamedblk1_3__DOT____Vrepeat2 
@@ -7663,54 +7796,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2793__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2793__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2795__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2795__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2797__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2797__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__write_data_packed 
                     = ((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__address)))) 
                        << 0x22U);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i)) 
                            && (1U & (IData)((__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__write_data_packed 
                                              >> (0x3fU 
                                                  & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i)))));
-                    if (VL_LIKELY((0x28U >= (0x3fU 
-                                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i)))) {
+                    if (VL_LIKELY(((0x28U >= (0x3fU 
+                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i))))) {
                         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h38b40054__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_ha98a5ddd__0;
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk7__DOT__i);
@@ -7724,11 +7857,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                         [__Vilp11];
                     __Vilp11 = ((IData)(1U) + __Vilp11);
                 }
+                __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__unnamedblk6__DOT__i = 0;
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__unnamedblk6__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__unnamedblk6__DOT__i)) {
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          129);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__unnamedblk6__DOT__i)) 
@@ -7740,20 +7874,20 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     }
                     co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          153);
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0 
                         = vlSelfRef.tb_croc_soc__DOT__jtag_tdo_o;
-                    if (VL_LIKELY((0x28U >= (0x3fU 
-                                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__unnamedblk6__DOT__i)))) {
+                    if (VL_LIKELY(((0x28U >= (0x3fU 
+                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__unnamedblk6__DOT__i))))) {
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__rdata[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__unnamedblk6__DOT__i)] 
-                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6d4fa99c__0;
+                            = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_hcd5db7f3__0;
                     }
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__unnamedblk6__DOT__i 
                         = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__readwrite_bits_dmi__2799__unnamedblk6__DOT__i);
@@ -7771,54 +7905,54 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2803__tms_val = 1U;
                     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                          nullptr, 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          143);
                     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                         = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2803__tms_val;
-                    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                          nullptr, 
                                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                          157);
                 }
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2805__tms_val = 1U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2805__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2807__tms_val = 0U;
                 co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                      nullptr, 
-                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                      143);
                 vlSelfRef.tb_croc_soc__DOT__jtag_tms_i 
                     = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2807__tms_val;
-                co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+                co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                      nullptr, 
                                                                      "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                     "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                     "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                      157);
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i = 0U;
                 while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i)) {
-                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0 
+                    vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0 
                         = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i)) 
                            && vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__Vstatic__read_data
                            [(0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i)]);
-                    if (VL_LIKELY((0x28U >= (0x3fU 
-                                             & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i)))) {
+                    if (VL_LIKELY(((0x28U >= (0x3fU 
+                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i))))) {
                         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__data_out 
                             = (((~ (1ULL << (0x3fU 
                                              & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i))) 
                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__data_out) 
                                | (0x1ffffffffffULL 
-                                  & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h1db35b93__0)) 
+                                  & ((QData)((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h3072ef25__0)) 
                                      << (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i))));
                     }
                     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi__2752__unnamedblk8__DOT__i 
@@ -7838,17 +7972,18 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
                 __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__trial_idx 
                     = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__trial_idx);
             }
-            __Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
+            vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
                 = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__read_dmi_exp_backoff__2620__data;
-            if (VL_UNLIKELY((0U != (7U & ((__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
-                                           >> 0xcU) 
-                                          | (1U & (__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
-                                                   >> 0x16U))))))) {
+            if (VL_UNLIKELY(((0U != (7U & ((vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
+                                            >> 0xcU) 
+                                           | (1U & 
+                                              (vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write__2016__unnamedblk2__DOT__sbcs 
+                                               >> 0x16U)))))))) {
                 VL_WRITEF_NX("[%0t] %%Fatal: tb_croc_soc.sv:142: Assertion failed in %Ntb_croc_soc.jtag_write.unnamedblk2: [JTAG] System bus error!\n",0,
                              64,VL_TIME_UNITED_Q(1),
                              -12,vlSymsp->name());
                 Verilated::runFlushCallbacks();
-                VL_STOP_MT("/scratch/vlsi2_12fs25/croc/rtl/tb_croc_soc.sv", 142, "", false);
+                VL_STOP_MT("/scratch/vlsi2_12fs25/croc_drc/rtl/tb_croc_soc.sv", 142, "", false);
             }
         }
     }
@@ -7859,6 +7994,8 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
     vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write_reg32__2809__check_write = 1U;
     vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write_reg32__2809__data = 0x12345678U;
     vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write_reg32__2809__addr = 0x10000000U;
+    vlSelf->__Vtask_tb_croc_soc__DOT__jtag_write_reg32__2809__unnamedblk3__DOT__rdata = 0;
+    __Vtask_tb_croc_soc__DOT__jtag_write_reg32__2809__sbcs = 0;
     __Vtask_tb_croc_soc__DOT__jtag_write_reg32__2809__sbcs = 0x40000U;
     VL_WRITEF_NX("@%t | [JTAG] Writing 0x%x to 0x%x\n",0,
                  64,VL_TIME_UNITED_Q(1),-12,32,vlSelfRef.__Vtask_tb_croc_soc__DOT__jtag_write_reg32__2809__data,
@@ -7869,29 +8006,33 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
     __Vtask_tb_croc_soc__DOT__jtag_write__2810__data 
         = __Vtask_tb_croc_soc__DOT__jtag_write_reg32__2809__sbcs;
     __Vtask_tb_croc_soc__DOT__jtag_write__2810__addr = 0x38U;
+    vlSelf->__Vtask_tb_croc_soc__DOT__jtag_write__2810__unnamedblk1__DOT__acs = 0;
+    vlSelf->__Vtask_tb_croc_soc__DOT__jtag_write__2810__unnamedblk2__DOT__sbcs = 0;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__data 
         = __Vtask_tb_croc_soc__DOT__jtag_write__2810__data;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__address 
         = __Vtask_tb_croc_soc__DOT__jtag_write__2810__addr;
+    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i = 0;
     vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__Vstatic__write_data_packed 
         = (2ULL | (((QData)((IData)((0x7fU & (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__address)))) 
                     << 0x22U) | ((QData)((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__data)) 
                                  << 2U)));
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i = 0U;
     while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i)) {
-        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h7e36a2cb__0 
+        vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf6df5f1f__0 
             = ((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i)) 
                && (1U & (IData)((vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__Vstatic__write_data_packed 
                                  >> (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i)))));
-        if (VL_LIKELY((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i)))) {
+        if (VL_LIKELY(((0x28U >= (0x3fU & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i))))) {
             vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__Vstatic__write_data[(0x3fU 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i)] 
-                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_h7e36a2cb__0;
+                = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT____Vlvbound_hf6df5f1f__0;
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i 
             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__write_dmi__2811__unnamedblk5__DOT__i);
     }
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__opcode = 0x11U;
+    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i = 0;
     {
         if (((IData)(vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select) 
              == (IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__opcode))) {
@@ -7899,14 +8040,14 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
         }
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i = 0U;
         while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i)) {
-            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0 
+            vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0 
                 = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i)) 
                    && (1U & ((IData)(__Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__opcode) 
                              >> (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i))));
-            if (VL_LIKELY((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i)))) {
+            if (VL_LIKELY(((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i))))) {
                 vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked[(7U 
                                                                                 & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i)] 
-                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h83435570__0;
+                    = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT____Vlvbound_h6b89e917__0;
             }
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__unnamedblk1__DOT__i);
@@ -7914,46 +8055,46 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2813__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2813__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2815__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2815__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2817__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2817__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2819__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2819__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2821__tms_last = 1U;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2821__wdata[0U] 
@@ -7971,11 +8112,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2821__wdata[4U] 
             = vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__Vstatic__opcode_unpacked
             [4U];
+        __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2821__unnamedblk2__DOT__i = 0;
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2821__unnamedblk2__DOT__i = 0U;
         while (VL_GTS_III(32, 5U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2821__unnamedblk2__DOT__i)) {
             co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  89);
             vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i 
                 = ((4U >= (7U & __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2821__unnamedblk2__DOT__i)) 
@@ -7987,12 +8129,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             }
             co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                                  nullptr, 
-                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                  153);
-            co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+            co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                                  nullptr, 
                                                                  "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                                 "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                                 "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                                  157);
             __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2821__unnamedblk2__DOT__i 
                 = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_opcode__2821__unnamedblk2__DOT__i);
@@ -8000,24 +8142,24 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2825__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2825__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2827__tms_val = 0U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2827__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         vlSelfRef.tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__ir_select 
             = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__set_ir__2812__opcode;
@@ -8025,33 +8167,33 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
     }
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2830__tms_val = 1U;
     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
-                                         nullptr, "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                         nullptr, "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                          143);
     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2830__tms_val;
-    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          157);
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2832__tms_val = 0U;
     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
-                                         nullptr, "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                         nullptr, "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                          143);
     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2832__tms_val;
-    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          157);
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2834__tms_val = 0U;
     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
-                                         nullptr, "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                         nullptr, "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                          143);
     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2834__tms_val;
-    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          157);
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2836__tms_last = 1U;
     IData/*31:0*/ __Vilp13;
@@ -8062,11 +8204,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
             [__Vilp13];
         __Vilp13 = ((IData)(1U) + __Vilp13);
     }
+    __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2836__unnamedblk4__DOT__i = 0;
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2836__unnamedblk4__DOT__i = 0U;
     while (VL_GTS_III(32, 0x29U, __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2836__unnamedblk4__DOT__i)) {
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              107);
         vlSelfRef.tb_croc_soc__DOT__jtag_tdi_i = ((0x28U 
                                                    >= 
@@ -8082,12 +8225,12 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
         }
         co_await vlSelfRef.__VdlySched.delay(0x7530ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              153);
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2836__unnamedblk4__DOT__i 
             = ((IData)(1U) + __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_bits_dmi__2836__unnamedblk4__DOT__i);
@@ -8097,33 +8240,33 @@ VlCoroutine Vtb_croc_soc___024root___eval_initial__TOP__Vtiming__2__5(Vtb_croc_s
         __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2841__tms_val = 1U;
         co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
                                              nullptr, 
-                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                              143);
         vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2841__tms_val;
-        co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+        co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                              nullptr, 
                                                              "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                             "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                             "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                              157);
     }
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2843__tms_val = 1U;
     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
-                                         nullptr, "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                         nullptr, "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                          143);
     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2843__tms_val;
-    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          157);
     __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2845__tms_val = 0U;
     co_await vlSelfRef.__VdlySched.delay(0x2710ULL, 
-                                         nullptr, "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                         nullptr, "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                          143);
     vlSelfRef.tb_croc_soc__DOT__jtag_tms_i = __Vtask_tb_croc_soc__DOT__jtag_dbg__DOT__jtag__DOT__write_tms__2845__tms_val;
-    co_await vlSelfRef.__VtrigSched_h4205aa33__0.trigger(0U, 
+    co_await vlSelfRef.__VtrigSched_hcc0dc21d__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge tb_croc_soc.i_clk_jtag.clk)", 
-                                                         "/scratch/vlsi2_12fs25/croc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
+                                                         "/scratch/vlsi2_12fs25/croc_drc/rtl/riscv-dbg/tb/jtag_test_simple.sv", 
                                                          157);
 }

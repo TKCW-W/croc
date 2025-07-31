@@ -10,8 +10,8 @@
 
 
 REPORT FILE NAME:         croc_chip.lvs.report.ext
-LAYOUT NAME:              /scratch/vlsi2_12fs25/croc_drc/calibre/drc/croc_chip.gds ('croc_chip')
-CREATION TIME:            Wed Jul 30 00:18:07 2025
+LAYOUT NAME:              /scratch/vlsi2_12fs25/croc_drc/klayout/croc_chip.gds ('croc_chip')
+CREATION TIME:            Thu Jul 31 01:51:30 2025
 CURRENT DIRECTORY:        /scratch/vlsi2_12fs25/croc_drc/calibre/lvs
 USER NAME:                vlsi2_12fs25
 CALIBRE VERSION:          v2021.3_35.19    Wed Sep 1 15:25:28 PDT 2021

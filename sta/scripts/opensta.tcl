@@ -18,13 +18,13 @@ read_liberty ${lib_dir}/sg13g2_io_typ_1p2V_3p3V_25C.lib
 
 # Load netlist
 # Student Task 12: Modify the path to the output netlist
-read_verilog ../yosys/out/croc_chip_yosys.v
+read_verilog ../openroad/out/croc.v
 link_design croc_chip
 
 # Set constraints
 create_clock -name clk_sys -period 10 [get_ports clk_i]
 
 # Generate timing report
-report_checks -path_group clk_sys -path_delay max > "./sta/reports/sta.rpt"
+report_checks -path_group clk_sys -path_delay max > "sta.rpt"
 
 exit

@@ -136,7 +136,7 @@ VL_ATTR_COLD void Vtb_croc_soc::traceBaseModel(VerilatedTraceBaseC* tfp, int lev
     VerilatedFstC* const stfp = dynamic_cast<VerilatedFstC*>(tfp);
     if (VL_UNLIKELY(!stfp)) {
         vl_fatal(__FILE__, __LINE__, __FILE__,"'Vtb_croc_soc::trace()' called on non-VerilatedFstC object;"
-            " use --trace-fst with VerilatedFst object, and --trace with VerilatedVcd object");
+            " use --trace-fst with VerilatedFst object, and --trace-vcd with VerilatedVcd object");
     }
     stfp->spTrace()->addModel(this);
     stfp->spTrace()->addInitCb(&trace_init, &(vlSymsp->TOP));

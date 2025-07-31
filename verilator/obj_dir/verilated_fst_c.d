@@ -11,7 +11,6 @@ verilated_fst_c.o: \
  /foss/tools/verilator/share/verilator/include/gtkwave/fastlz.h \
  /foss/tools/verilator/share/verilator/include/gtkwave/fastlz.c \
  /foss/tools/verilator/share/verilator/include/gtkwave/fstapi.c \
- /foss/tools/verilator/share/verilator/include/gtkwave/fst_config.h \
  /foss/tools/verilator/share/verilator/include/gtkwave/fstapi.h \
  /foss/tools/verilator/share/verilator/include/gtkwave/lz4.h \
  /foss/tools/verilator/share/verilator/include/gtkwave/lz4.c \

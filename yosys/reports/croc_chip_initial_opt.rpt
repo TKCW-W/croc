@@ -4041,8 +4041,8 @@
 
 === user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr ===
 
-   Number of wires:                 36
-   Number of wire bits:            444
+   Number of wires:                 39
+   Number of wire bits:            447
    Number of public wires:          22
    Number of public wire bits:     323
    Number of ports:                  4
@@ -4050,10 +4050,11 @@
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 26
+   Number of cells:                 29
      $aldff                          7
      $eq                             2
-     $logic_not                      1
+     $logic_and                      2
+     $logic_not                      2
      $mux                           13
      $pmux                           1
      $reduce_or                      1
@@ -4300,8 +4301,8 @@
          user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr      1
          user_rom$croc_chip.i_croc_soc.i_user.i_rom      1
 
-   Number of wires:               7459
-   Number of wire bits:         106099
+   Number of wires:               7462
+   Number of wire bits:         106102
    Number of public wires:        4069
    Number of public wire bits:   66641
    Number of ports:               2148
@@ -4309,7 +4310,7 @@
    Number of memories:               2
    Number of memory bits:          288
    Number of processes:              0
-   Number of cells:               5673
+   Number of cells:               5676
      $add                           62
      $aldff                        561
      $and                          615
@@ -4321,8 +4322,8 @@
      $ge                            63
      $gt                            18
      $le                            32
-     $logic_and                    244
-     $logic_not                    143
+     $logic_and                    246
+     $logic_not                    144
      $logic_or                      72
      $lt                            92
      $meminit                        2

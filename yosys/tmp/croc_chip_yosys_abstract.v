@@ -2369,7 +2369,7 @@ module \cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_re
   assign \$auto$opt_dff.cc:194:make_patterns_logic$14876  = { \$procmux$247_CMP , ack_synced } != 2'h2;
   assign \$auto$opt_dff.cc:194:make_patterns_logic$14878  = { \$procmux$231_CMP , ack_synced } != 2'h3;
   assign \$auto$opt_dff.cc:219:make_patterns_logic$14871  = & { \$procmux$261_CMP , valid_i };
-  assign \$auto$opt_dff.cc:219:make_patterns_logic$14880  = & { \$auto$opt_dff.cc:194:make_patterns_logic$14876 , \$auto$opt_dff.cc:194:make_patterns_logic$14874 , \$auto$opt_dff.cc:194:make_patterns_logic$14878  };
+  assign \$auto$opt_dff.cc:219:make_patterns_logic$14880  = & { \$auto$opt_dff.cc:194:make_patterns_logic$14876 , \$auto$opt_dff.cc:194:make_patterns_logic$14878 , \$auto$opt_dff.cc:194:make_patterns_logic$14874  };
   (* keep = "true" *)
   (* src = "../rtl/common_cells/cdc_4phase.sv:181.3" *)
   always @(posedge clk_i, negedge rst_ni)
@@ -3160,7 +3160,7 @@ module \cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_
   assign \$auto$opt_dff.cc:194:make_patterns_logic$14930  = { \$procmux$1263_CMP , initiator_phase_transition_ack } != 2'h2;
   assign \$auto$opt_dff.cc:194:make_patterns_logic$14932  = { \$procmux$1270_CMP , initiator_phase_transition_ack } != 2'h2;
   assign \$auto$opt_dff.cc:194:make_patterns_logic$14934  = { \$procmux$1328_CMP , initiator_phase_transition_ack } != 2'h2;
-  assign \$auto$opt_dff.cc:219:make_patterns_logic$14936  = & { \$auto$opt_dff.cc:194:make_patterns_logic$14934 , \$auto$opt_dff.cc:194:make_patterns_logic$14922 , \$auto$opt_dff.cc:194:make_patterns_logic$14924 , \$auto$opt_dff.cc:194:make_patterns_logic$14926 , \$auto$opt_dff.cc:194:make_patterns_logic$14928 , \$auto$opt_dff.cc:194:make_patterns_logic$14930 , \$auto$opt_dff.cc:194:make_patterns_logic$14918 , \$auto$opt_dff.cc:194:make_patterns_logic$14920 , \$auto$opt_dff.cc:194:make_patterns_logic$14932  };
+  assign \$auto$opt_dff.cc:219:make_patterns_logic$14936  = & { \$auto$opt_dff.cc:194:make_patterns_logic$14934 , \$auto$opt_dff.cc:194:make_patterns_logic$14932 , \$auto$opt_dff.cc:194:make_patterns_logic$14920 , \$auto$opt_dff.cc:194:make_patterns_logic$14922 , \$auto$opt_dff.cc:194:make_patterns_logic$14924 , \$auto$opt_dff.cc:194:make_patterns_logic$14926 , \$auto$opt_dff.cc:194:make_patterns_logic$14928 , \$auto$opt_dff.cc:194:make_patterns_logic$14930 , \$auto$opt_dff.cc:194:make_patterns_logic$14918  };
   assign \$auto$opt_reduce.cc:137:opt_pmux$14229  = | { \$procmux$1196_CMP , \$procmux$1195_CMP , \$procmux$1194_CMP  };
   assign \$auto$opt_reduce.cc:137:opt_pmux$14231  = | { \$procmux$1232_CMP , \$procmux$1231_CMP , \$procmux$1229_CMP  };
   assign initiator_isolate_out = | { \$procmux$1357_CMP , \$procmux$1339_CMP , \$procmux$1328_CMP , \$procmux$1293_CMP , \$procmux$1278_CMP , \$procmux$1270_CMP , \$procmux$1263_CMP , \$procmux$1257_CMP  };
@@ -3423,7 +3423,7 @@ module \cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_
   assign \$auto$opt_dff.cc:194:make_patterns_logic$14952  = { \$procmux$1098_CMP , initiator_phase_transition_ack } != 2'h2;
   assign \$auto$opt_dff.cc:194:make_patterns_logic$14954  = { \$procmux$1100_CMP , initiator_phase_transition_ack } != 2'h2;
   assign \$auto$opt_dff.cc:194:make_patterns_logic$14956  = { \$procmux$1102_CMP , initiator_phase_transition_ack } != 2'h2;
-  assign \$auto$opt_dff.cc:219:make_patterns_logic$14958  = & { \$auto$opt_dff.cc:194:make_patterns_logic$14946 , \$auto$opt_dff.cc:194:make_patterns_logic$14948 , \$auto$opt_dff.cc:194:make_patterns_logic$14950 , \$auto$opt_dff.cc:194:make_patterns_logic$14952 , \$auto$opt_dff.cc:194:make_patterns_logic$14954 , \$auto$opt_dff.cc:194:make_patterns_logic$14956 , \$auto$opt_dff.cc:194:make_patterns_logic$14942 , \$auto$opt_dff.cc:194:make_patterns_logic$14940 , \$auto$opt_dff.cc:194:make_patterns_logic$14944  };
+  assign \$auto$opt_dff.cc:219:make_patterns_logic$14958  = & { \$auto$opt_dff.cc:194:make_patterns_logic$14946 , \$auto$opt_dff.cc:194:make_patterns_logic$14948 , \$auto$opt_dff.cc:194:make_patterns_logic$14950 , \$auto$opt_dff.cc:194:make_patterns_logic$14952 , \$auto$opt_dff.cc:194:make_patterns_logic$14954 , \$auto$opt_dff.cc:194:make_patterns_logic$14956 , \$auto$opt_dff.cc:194:make_patterns_logic$14940 , \$auto$opt_dff.cc:194:make_patterns_logic$14944 , \$auto$opt_dff.cc:194:make_patterns_logic$14942  };
   assign \$auto$opt_reduce.cc:137:opt_pmux$14249  = | { \$procmux$903_CMP , \$procmux$902_CMP , \$procmux$900_CMP  };
   assign initiator_phase_transition_req = | { \$procmux$1102_CMP , \$procmux$1100_CMP , \$procmux$1098_CMP , \$procmux$1063_CMP , \$procmux$1034_CMP , \$procmux$1013_CMP  };
   assign \$auto$opt_reduce.cc:137:opt_pmux$14253  = | { \$procmux$902_CMP , \$procmux$901_CMP , \$procmux$900_CMP  };
@@ -16020,9 +16020,9 @@ module \dmi_jtag$croc_chip.i_croc_soc.i_croc.i_dmi_jtag (clk_i, rst_ni, testmode
   assign \$auto$opt_dff.cc:194:make_patterns_logic$15472  = { \$50y , dmi_clear, dmi_resp_valid } != 3'h4;
   assign \$auto$opt_dff.cc:194:make_patterns_logic$15476  = | { \$procmux$13746_CMP , \$50y , dmi_clear };
   assign \$auto$opt_dff.cc:194:make_patterns_logic$15483  = | { \$procmux$13746_CMP , dmi_clear };
-  assign \$auto$opt_dff.cc:219:make_patterns_logic$15466  = & { \$auto$opt_dff.cc:194:make_patterns_logic$15460 , \$auto$opt_dff.cc:194:make_patterns_logic$15458 , \$auto$opt_dff.cc:194:make_patterns_logic$15456 , \$auto$opt_dff.cc:194:make_patterns_logic$15464 , \$auto$opt_dff.cc:194:make_patterns_logic$15462  };
-  assign \$auto$opt_dff.cc:219:make_patterns_logic$15478  = & { \$auto$opt_dff.cc:194:make_patterns_logic$15476 , \$auto$opt_dff.cc:194:make_patterns_logic$15472 , \$auto$opt_dff.cc:194:make_patterns_logic$15462  };
-  assign \$auto$opt_dff.cc:219:make_patterns_logic$15485  = & { \$auto$opt_dff.cc:194:make_patterns_logic$15483 , \$auto$opt_dff.cc:194:make_patterns_logic$15462  };
+  assign \$auto$opt_dff.cc:219:make_patterns_logic$15466  = & { \$auto$opt_dff.cc:194:make_patterns_logic$15462 , \$auto$opt_dff.cc:194:make_patterns_logic$15460 , \$auto$opt_dff.cc:194:make_patterns_logic$15458 , \$auto$opt_dff.cc:194:make_patterns_logic$15456 , \$auto$opt_dff.cc:194:make_patterns_logic$15464  };
+  assign \$auto$opt_dff.cc:219:make_patterns_logic$15478  = & { \$auto$opt_dff.cc:194:make_patterns_logic$15462 , \$auto$opt_dff.cc:194:make_patterns_logic$15476 , \$auto$opt_dff.cc:194:make_patterns_logic$15472  };
+  assign \$auto$opt_dff.cc:219:make_patterns_logic$15485  = & { \$auto$opt_dff.cc:194:make_patterns_logic$15462 , \$auto$opt_dff.cc:194:make_patterns_logic$15483  };
   assign \$auto$opt_reduce.cc:137:opt_pmux$14369  = | { \$49y , \$12y  };
   assign \$auto$opt_reduce.cc:137:opt_pmux$14423  = | { \$procmux$13742_CMP , \$50y  };
   (* src = "../rtl/riscv-dbg/dmi_jtag.sv:285.3" *)
@@ -27604,6 +27604,10 @@ endmodule
 
 (* src = "../rtl/user_domain/user_lfsr.sv:4.8" *)
 module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_req_i, obi_rsp_o);
+  wire \$36y ;
+  wire \$37y ;
+  wire \$38y ;
+  wire \$39y ;
   wire \$auto$opt_dff.cc:194:make_patterns_logic$15939 ;
   wire \$auto$opt_dff.cc:194:make_patterns_logic$15941 ;
   wire \$auto$opt_dff.cc:194:make_patterns_logic$15943 ;
@@ -27614,7 +27618,6 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   wire [31:0] \$auto$wreduce.cc:514:run$14607 ;
   wire \$procmux$12771_CMP ;
   wire \$procmux$12785_Y ;
-  wire \$procmux$12788_CMP ;
   wire \$procmux$12811_Y ;
   wire \$procmux$12816_CMP ;
   (* src = "../rtl/user_domain/user_lfsr.sv:28.32" *)
@@ -27653,18 +27656,22 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   (* src = "../rtl/user_domain/user_lfsr.sv:27.9" *)
   reg we_q;
   assign feedback = ^ (* src = "../rtl/user_domain/user_lfsr.sv:40.21-40.41" *) { lfsr_reg_q[15], 1'h0, lfsr_reg_q[13:12], 1'h0, lfsr_reg_q[10], 10'h000 };
+  assign \$36y  = addr_q[3:2] == (* src = "../rtl/user_domain/user_lfsr.sv:87.31-87.46" *) 1'h1;
+  assign \$37y  = we_q && (* src = "../rtl/user_domain/user_lfsr.sv:87.23-87.46" *) \$36y ;
+  assign \$38y  = ! (* src = "../rtl/user_domain/user_lfsr.sv:87.21-87.47" *) \$37y ;
+  assign \$39y  = enable_q && (* src = "../rtl/user_domain/user_lfsr.sv:87.9-87.47" *) \$38y ;
   always @(posedge clk_i, negedge rst_ni)
     if (!rst_ni) lfsr_reg_q <= 16'hace1;
     else if (\$auto$opt_dff.cc:219:make_patterns_logic$15945 ) lfsr_reg_q <= lfsr_reg_d;
   always @(posedge clk_i, negedge rst_ni)
     if (!rst_ni) enable_q <= 1'h0;
     else if (\$auto$opt_dff.cc:219:make_patterns_logic$15948 ) enable_q <= wdata_q[0];
-  assign \$auto$opt_dff.cc:194:make_patterns_logic$15939  = { \$procmux$12788_CMP , enable_q, req_q, we_q } != 4'ha;
-  assign \$auto$opt_dff.cc:194:make_patterns_logic$15941  = | { enable_q, req_q };
-  assign \$auto$opt_dff.cc:194:make_patterns_logic$15943  = { \$procmux$12788_CMP , enable_q, req_q } != 3'h1;
+  assign \$auto$opt_dff.cc:194:make_patterns_logic$15939  = { req_q, \$39y , \$36y  } != 3'h4;
+  assign \$auto$opt_dff.cc:194:make_patterns_logic$15941  = { req_q, we_q, \$39y , \$36y  } != 4'h9;
+  assign \$auto$opt_dff.cc:194:make_patterns_logic$15943  = | { req_q, \$39y  };
   assign \$auto$opt_dff.cc:219:make_patterns_logic$15945  = & { \$auto$opt_dff.cc:194:make_patterns_logic$15943 , \$auto$opt_dff.cc:194:make_patterns_logic$15941 , \$auto$opt_dff.cc:194:make_patterns_logic$15939  };
   assign \$auto$opt_dff.cc:219:make_patterns_logic$15948  = & { \$procmux$12816_CMP , req_q, we_q };
-  assign \$auto$opt_reduce.cc:137:opt_pmux$14435  = | { \$procmux$12816_CMP , \$procmux$12788_CMP  };
+  assign \$auto$opt_reduce.cc:137:opt_pmux$14435  = | { \$procmux$12816_CMP , \$36y  };
   always @(posedge clk_i, negedge rst_ni)
     if (!rst_ni) addr_q <= 32'd0;
     else addr_q <= obi_req_i[73:42];
@@ -27680,11 +27687,9 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   always @(posedge clk_i, negedge rst_ni)
     if (!rst_ni) we_q <= 1'h0;
     else we_q <= obi_req_i[41];
-  assign lfsr_reg_d = enable_q ? (* src = "../rtl/user_domain/user_lfsr.sv:88.7-88.50|../rtl/user_domain/user_lfsr.sv:87.5-88.50" *) { lfsr_reg_q[14:0], feedback } : wdata_q[15:0];
+  assign lfsr_reg_d = \$39y  ? (* src = "../rtl/user_domain/user_lfsr.sv:88.7-88.50|../rtl/user_domain/user_lfsr.sv:87.5-89.8" *) { lfsr_reg_q[14:0], feedback } : wdata_q[15:0];
   assign \$procmux$12771_CMP  = addr_q[3:2] == (* full_case = 32'd1 *) (* src = "../rtl/user_domain/user_lfsr.sv:78.11-80.31|../rtl/user_domain/user_lfsr.sv:66.7-83.14" *) 2'h2;
   assign \$auto$wreduce.cc:514:run$14606 [15:0] = we_q ? (* full_case = 32'd1 *) (* src = "../rtl/user_domain/user_lfsr.sv:79.13-79.55|../rtl/user_domain/user_lfsr.sv:78.11-80.31" *) 16'h0000 : lfsr_reg_q;
-  assign \$procmux$12785_Y  = ~ (* full_case = 32'd1 *) (* src = "../rtl/user_domain/user_lfsr.sv:72.21-75.14|../rtl/user_domain/user_lfsr.sv:72.11-75.35" *) we_q;
-  assign \$procmux$12788_CMP  = addr_q[3:2] == (* full_case = 32'd1 *) (* src = "../rtl/user_domain/user_lfsr.sv:72.11-75.35|../rtl/user_domain/user_lfsr.sv:66.7-83.14" *) 1'h1;
   function [0:0] \$procmux$12811 ;
     input [0:0] a;
     input [1:0] b;
@@ -27703,6 +27708,7 @@ module \user_lfsr$croc_chip.i_croc_soc.i_user.i_user_lfsr (clk_i, rst_ni, obi_re
   endfunction
   assign \$procmux$12811_Y  = \$procmux$12811 (1'h1, { \$procmux$12785_Y , we_q }, { \$auto$opt_reduce.cc:137:opt_pmux$14435 , \$procmux$12771_CMP  });
   assign \$procmux$12816_CMP  = ! (* full_case = 32'd1 *) (* src = "../rtl/user_domain/user_lfsr.sv:68.11-69.31|../rtl/user_domain/user_lfsr.sv:66.7-83.14" *) addr_q[3:2];
+  assign \$procmux$12785_Y  = ~ (* full_case = 32'd1 *) (* src = "../rtl/user_domain/user_lfsr.sv:68.21-68.43|../rtl/user_domain/user_lfsr.sv:68.11-69.31" *) we_q;
   assign \$auto$wreduce.cc:514:run$14607 [15:0] = \$procmux$12771_CMP  ? (* full_case = 32'd1 *) (* src = "../rtl/user_domain/user_lfsr.sv:78.11-80.31|../rtl/user_domain/user_lfsr.sv:66.7-83.14" *) \$auto$wreduce.cc:514:run$14606 [15:0] : 16'h0000;
   assign rsp_err = req_q & (* src = "../rtl/user_domain/user_lfsr.sv:66.7-83.14|../rtl/user_domain/user_lfsr.sv:65.5-84.8" *) \$procmux$12811_Y ;
   assign rsp_data = req_q ? (* src = "../rtl/user_domain/user_lfsr.sv:66.7-83.14|../rtl/user_domain/user_lfsr.sv:65.5-84.8" *) \$auto$wreduce.cc:514:run$14607 [15:0] : 16'h0000;

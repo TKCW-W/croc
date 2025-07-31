@@ -25,7 +25,7 @@ link_design croc_chip
 create_clock -name clk_sys -period 10 [get_ports clk_i]
 
 # Generate timing report
-report_checks -path_group clk_sys -path_delay max > "sta.rpt"
+report_checks -path_group clk_sys -path_delay max > "sta_post_syn.rpt"
 
 exit
 

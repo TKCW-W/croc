@@ -45,7 +45,7 @@ Vtb_croc_soc__Syms::Vtb_croc_soc__Syms(VerilatedContext* contextp, const char* n
     , TOP__soc_ctrl_reg_pkg{this, Verilated::catName(namep, "soc_ctrl_reg_pkg")}
 {
         // Check resources
-        Verilated::stackCheck(3829);
+        Verilated::stackCheck(2845);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-12);
     _vm_contextp__->timeprecision(-12);
@@ -54,11 +54,4 @@ Vtb_croc_soc__Syms::Vtb_croc_soc__Syms(VerilatedContext* contextp, const char* n
     // Setup each module's pointer back to symbol table (for public functions)
     TOP.__Vconfigure(true);
     TOP__soc_ctrl_reg_pkg.__Vconfigure(true);
-    // Setup scopes
-    __Vscope_tb_croc_soc.configure(this, name(), "tb_croc_soc", "tb_croc_soc", "<null>", -12, VerilatedScope::SCOPE_OTHER);
-    __Vscope_tb_croc_soc__jtag_init.configure(this, name(), "tb_croc_soc.jtag_init", "jtag_init", "<null>", -12, VerilatedScope::SCOPE_OTHER);
-    __Vscope_tb_croc_soc__jtag_load_hex.configure(this, name(), "tb_croc_soc.jtag_load_hex", "jtag_load_hex", "<null>", -12, VerilatedScope::SCOPE_OTHER);
-    __Vscope_tb_croc_soc__jtag_write__unnamedblk1.configure(this, name(), "tb_croc_soc.jtag_write.unnamedblk1", "unnamedblk1", "<null>", -12, VerilatedScope::SCOPE_OTHER);
-    __Vscope_tb_croc_soc__jtag_write__unnamedblk2.configure(this, name(), "tb_croc_soc.jtag_write.unnamedblk2", "unnamedblk2", "<null>", -12, VerilatedScope::SCOPE_OTHER);
-    __Vscope_tb_croc_soc__jtag_write_reg32__unnamedblk3.configure(this, name(), "tb_croc_soc.jtag_write_reg32.unnamedblk3", "unnamedblk3", "<null>", -12, VerilatedScope::SCOPE_OTHER);
 }
